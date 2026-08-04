@@ -15,14 +15,22 @@ def require(condition, message):
         raise AssertionError(message)
 
 
-def load_streets():
+def load_literal_assignment(name):
     tree = ast.parse(MAP_PY.read_text(encoding="utf-8"))
     for node in tree.body:
         if isinstance(node, ast.Assign):
             for target in node.targets:
-                if isinstance(target, ast.Name) and target.id == "streets":
+                if isinstance(target, ast.Name) and target.id == name:
                     return ast.literal_eval(node.value)
-    raise AssertionError("streets dictionary is missing in map.py")
+    raise AssertionError(f"{name} assignment is missing in map.py")
+
+
+def load_streets():
+    return load_literal_assignment("streets")
+
+
+def load_places():
+    return load_literal_assignment("places")
 
 
 def body_after_frontmatter(text):
@@ -69,7 +77,7 @@ def main():
         ],
         "Kuybysheva",
     )
-    require(9500 <= char_count <= 17000, f"md length is {char_count}, expected 9500-17000")
+    require(9500 <= char_count <= 34000, f"md length is {char_count}, expected 9500-34000")
     require("1586" in text, "published md should include Samara foundation prehistory")
     require("1782" in text, "published md should include the first regular city plan")
     require("1804" in text, "published md should include the early regular-plan expansion")
@@ -84,10 +92,31 @@ def main():
     require("lon:" not in text, "published md should not contain longitude metadata")
     require("address:" not in text, "published md should not contain address metadata blocks")
     require("description:" not in text, "published md should not contain description metadata blocks")
+    require(text.count("![") >= 14, "Kuybysheva md should include at least fourteen publication images")
+    require(text.count("commons.wikimedia.org/wiki/Special:FilePath/") >= 14, "Kuybysheva images should use Wikimedia Commons file paths")
+    require(text.count("Источник изображения:") >= 14, "Kuybysheva images should have visible source captions")
+    for image_label in (
+        "План Самары 1782",
+        "План Самары 1839",
+        "План Самары 1903",
+        "Дворянская улица",
+        "Алексеевская площадь",
+        "Конка на Панской",
+        "Русский торгово-промышленный банк",
+        "Самарский областной художественный музей",
+        "Кирха Святого Георга",
+        "Бристоль-Жигули",
+        "площадь Революции",
+        "Особняк Клодта",
+        "Особняк Наумова",
+        "Крестьянский и Дворянский поземельные банки",
+    ):
+        require(image_label in text, f"Kuybysheva md should include image/caption for: {image_label}")
 
     map_source = MAP_PY.read_text(encoding="utf-8")
     html_source = MAP_HTML.read_text(encoding="utf-8")
     streets = load_streets()
+    places = load_places()
     kuibysheva_coords = streets["Куйбышева"]["coords"]
 
     require('"Куйбышева"' in map_source, "Kuybysheva street data is missing in map.py")
@@ -111,6 +140,13 @@ def main():
     require("<b>Даты:</b>" in html_source, "generated map popups should show dates on a separate line")
     require("<b>Факты:</b>" in html_source, "generated map popups should show facts on a separate line")
     require("line-height: 1.35" in html_source, "generated map popups should use readable multi-line formatting")
+    kuibysheva_image_places = [
+        place for place in places
+        if place.get("color") == "red" and place.get("image_url")
+    ]
+    require(len(kuibysheva_image_places) >= 7, "Kuybysheva map should include thumbnails for at least seven red markers")
+    for thumbnail_caption in ("Бристоль-Жигули", "Кирха Святого Георга", "Самарский художественный музей", "Особняк Клодта", "Особняк Наумова", "Поземельные банки", "Площадь Революции"):
+        require(thumbnail_caption in html_source, f"Kuybysheva generated map should include thumbnail caption: {thumbnail_caption}")
 
     require(FRUNZE_MD.exists(), "streets/02-frunze.md is missing")
     frunze_text = FRUNZE_MD.read_text(encoding="utf-8")
@@ -128,7 +164,7 @@ def main():
         ],
         "Frunze",
     )
-    require(9500 <= frunze_count <= 17000, f"Frunze md length is {frunze_count}, expected 9500-17000")
+    require(9500 <= frunze_count <= 36000, f"Frunze md length is {frunze_count}, expected 9500-36000")
     require("## Источники" in frunze_text, "Frunze sources section is missing")
     require("lat:" not in frunze_text, "Frunze published md should not contain latitude metadata")
     require("lon:" not in frunze_text, "Frunze published md should not contain longitude metadata")
@@ -136,6 +172,24 @@ def main():
         require(required_fact in frunze_text, f"Frunze md should include numeric fact: {required_fact}")
     for new_fact in ("12 февраля 1915", "Алексеевской площади", "пять вагонов", "22 километров в час", "115 тыс.", "3 копейки", "Драматический театр", "1888", "Михаила Чичагова"):
         require(new_fact in frunze_text, f"Frunze md should include added tram/theatre fact: {new_fact}")
+    require(frunze_text.count("![") >= 12, "Frunze md should include at least twelve publication images")
+    require(frunze_text.count("commons.wikimedia.org/wiki/Special:FilePath/") >= 12, "Frunze images should use Wikimedia Commons file paths")
+    require(frunze_text.count("Источник изображения:") >= 12, "Frunze images should have visible source captions")
+    for image_label in (
+        "Дом Челышева",
+        "Дом-музей М. В. Фрунзе",
+        "Губернская земская управа",
+        "Самарская филармония",
+        "Дом Шостаковича",
+        "Музей-усадьба А. Н. Толстого",
+        "Костел Пресвятого Сердца Иисуса",
+        "Особняк Курлиной",
+        "Памятник Чапаеву",
+        "Самарский драматический театр",
+        "Бункер Сталина",
+        "трамвай на улице Фрунзе",
+    ):
+        require(image_label in frunze_text, f"Frunze md should include image/caption for: {image_label}")
 
     require('"Фрунзе"' in map_source, "Frunze street data is missing in map.py")
     frunze_coords = streets["Фрунзе"]["coords"]
@@ -148,8 +202,16 @@ def main():
     for marker_name in ("Музей модерна", "Костел Пресвятого Сердца Иисуса", "Бункер И. В. Сталина", "Дом-музей М. В. Фрунзе", "Трамвай на Саратовской / Фрунзе", "Самарский драматический театр"):
         require(marker_name in map_source, f"Frunze marker is missing: {marker_name}")
     require("Улица Фрунзе" in html_source, "generated map does not contain Frunze tooltip")
+    frunze_image_places = [
+        place for place in places
+        if place.get("color") == "blue" and place.get("image_url")
+    ]
+    require(len(frunze_image_places) >= 12, "Frunze map should include thumbnails for at least twelve blue markers")
+    require("popup-thumb" in html_source, "generated map popups should render image thumbnails")
+    require("Самарский драматический театр" in html_source, "generated map should include drama theater popup")
+    require("Самарская филармония" in html_source, "generated map should include Philharmonia thumbnail caption")
 
-    print(f"validated {STREET_MD.relative_to(ROOT)} ({char_count} chars)")
+    print(f"validated {STREET_MD.relative_to(ROOT)} ({char_count} chars), {FRUNZE_MD.relative_to(ROOT)} ({frunze_count} chars)")
 
 
 if __name__ == "__main__":

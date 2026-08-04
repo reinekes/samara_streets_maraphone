@@ -161,7 +161,9 @@ places = [
             "<b>Факты:</b> бывший «Гранд-Отель» рекламировал электрическое освещение, автомобили и комиссионеров к поездам и пароходам; история о пении Шаляпина с балкона живет как городское предание."
         ],
         "color": "red",
-        "icon": "bullhorn"
+        "icon": "bullhorn",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0,%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9A%D1%83%D0%B9%D0%B1%D1%8B%D1%88%D0%B5%D0%B2%D0%B0,%20111%20(2).jpg?width=520",
+        "image_caption": "Бристоль-Жигули"
     },
     {
         "name": "Лютеранская кирха Святого Георга", 
@@ -173,7 +175,9 @@ places = [
             "<b>Факты:</b> храм начинался как католический проект купца Егора Аннаева, но после политических осложнений 1860-х был передан лютеранской общине."
         ],
         "color": "red",
-        "icon": "info-sign"
+        "icon": "info-sign",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D0%B8%D1%80%D1%85%D0%B0%20%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE%20%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B0.jpg?width=520",
+        "image_caption": "Кирха Святого Георга"
     },
     {
         "name": "Волжско-Камский коммерческий банк", 
@@ -185,7 +189,9 @@ places = [
             "<b>Факты:</b> здание перестроили из бывшего дома Курлиных под крупный коммерческий банк; сегодня здесь Самарский областной художественный музей."
         ],
         "color": "red",
-        "icon": "usd"
+        "icon": "usd",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/92%20Kuybisheva%20st%20Samara.JPG?width=520",
+        "image_caption": "Самарский художественный музей"
     },
     {
         "name": "Кинотеатр «Художественный»", 
@@ -209,7 +215,9 @@ places = [
             "<b>Факты:</b> один из самых узнаваемых частных особняков старой Самары; сегодня в нем работает Детская картинная галерея."
         ],
         "color": "red",
-        "icon": "home"
+        "icon": "home",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9E%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%86%D0%B0%20%D0%9A%D0%BB%D0%BE%D0%B4%D1%82%D0%B0.jpg?width=520",
+        "image_caption": "Особняк Клодта"
     },
     {
         "name": "Особняк Наумова / посольство Великобритании", 
@@ -221,7 +229,9 @@ places = [
             "<b>Факты:</b> дом связан с губернским предводителем дворянства А. Н. Наумовым; в годы запасной столицы здесь размещалось посольство Великобритании."
         ],
         "color": "red",
-        "icon": "globe"
+        "icon": "globe",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%B4%D0%BE%D0%BC%D0%B0%20%D0%9D%D0%B0%D1%83%D0%BC%D0%BE%D0%B2%D0%B0.jpg?width=520",
+        "image_caption": "Особняк Наумова"
     },
     {
         "name": "Отделение Государственного банка", 
@@ -269,7 +279,9 @@ places = [
             "<b>Факты:</b> Крестьянский и Дворянский поземельные банки обслуживали земельные сделки и кредит; сейчас здание связано с СамГТУ."
         ],
         "color": "red",
-        "icon": "education"
+        "icon": "education",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%97%D0%B5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B1%D0%B0%D0%BD%D0%BA.jpg?width=520",
+        "image_caption": "Поземельные банки"
     },
     {
         "name": "Дом промышленности", 
@@ -317,7 +329,9 @@ places = [
             "<b>Факты:</b> прежние названия - Торговая, Хлебная, Панская, Алексеевская; здесь сходились торговля, губернская администрация, революционные митинги и первые маршруты городского транспорта."
         ],
         "color": "red",
-        "icon": "map-marker"
+        "icon": "map-marker",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/109-06%20%D0%9A%D1%83%D0%B9%D0%B1%D1%8B%D1%88%D0%B5%D0%B2%20(%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0).jpg?width=520",
+        "image_caption": "Площадь Революции"
     },
     {
         "name": "Музей истории войск ПриВО",
@@ -341,7 +355,9 @@ places = [
             "<b>Факты:</b> маркер напоминает о М. Д. Челышеве - самарском купце и общественном деятеле, чья фамилия успела стать названием улицы между Саратовской и Фрунзе."
         ],
         "color": "blue",
-        "icon": "home"
+        "icon": "home",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%A7%D0%B5%D0%BB%D1%8B%D1%88%D0%B5%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A4%D1%80%D1%83%D0%BD%D0%B7%D0%B5%2C%2056%201.jpg?width=520",
+        "image_caption": "Дом Челышева"
     },
     {
         "name": "Банк конца XIX века",
@@ -365,7 +381,9 @@ places = [
             "<b>Факты:</b> первым владельцем был купец первой гильдии Оскар Кёницер; музей открыли в день 16-й годовщины Рабоче-Крестьянской Красной армии."
         ],
         "color": "blue",
-        "icon": "flag"
+        "icon": "flag",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/DSCN2055-1.jpg?width=520",
+        "image_caption": "Дом-музей М. В. Фрунзе"
     },
     {
         "name": "Губернская земская управа",
@@ -377,7 +395,9 @@ places = [
             "<b>Факты:</b> здесь размещался штаб Южной группы войск Восточного фронта; в здании работали М. В. Фрунзе и В. В. Куйбышев."
         ],
         "color": "blue",
-        "icon": "briefcase"
+        "icon": "briefcase",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A4%D1%80%D1%83%D0%BD%D0%B7%D0%B5%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20116.jpg?width=520",
+        "image_caption": "Губернская земская управа"
     },
     {
         "name": "Самарская государственная филармония / «Олимп»",
@@ -389,7 +409,9 @@ places = [
             "<b>Факты:</b> зал «Олимпа» вмещал 1100 зрителей и мог превращаться в цирковую арену; в 1909 г. здесь выступал Ф. И. Шаляпин."
         ],
         "color": "blue",
-        "icon": "music"
+        "icon": "music",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%84%D0%B8%D0%BB%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F%28%20%D0%A2%D0%B5%D0%B0%D1%82%D1%80%20%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%29.jpg?width=520",
+        "image_caption": "Самарская филармония"
     },
     {
         "name": "Дом Шостаковича и Димитрова",
@@ -401,7 +423,9 @@ places = [
             "<b>Факты:</b> дом имеет 8 подъездов и 98 квартир; важен для истории запасной столицы и эвакуированной культурной элиты Куйбышева."
         ],
         "color": "blue",
-        "icon": "volume-up"
+        "icon": "volume-up",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Frunze%20146.jpg?width=520",
+        "image_caption": "Дом Шостаковича"
     },
     {
         "name": "Музей-усадьба А. Н. Толстого",
@@ -413,7 +437,9 @@ places = [
             "<b>Факты:</b> территория около 0,35 га; здесь хранится память о самарском периоде семьи Толстых и литературной Самаре рубежа XIX-XX веков."
         ],
         "color": "blue",
-        "icon": "book"
+        "icon": "book",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara.%20Manor%2C%20Main%20house%2C%20155-a%20Frunze%20Street.jpg?width=520",
+        "image_caption": "Музей-усадьба А. Н. Толстого"
     },
     {
         "name": "Костел Пресвятого Сердца Иисуса",
@@ -425,7 +451,9 @@ places = [
             "<b>Факты:</b> архитектор Ф. О. Богданович-Дворжецкий, строительство под руководством А. А. Щербачева; башни около 47 м; орган привезли из Австрии."
         ],
         "color": "blue",
-        "icon": "plus"
+        "icon": "plus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara.%20The%20church.%20Spires.jpg?width=520",
+        "image_caption": "Костел Пресвятого Сердца Иисуса"
     },
     {
         "name": "Музей модерна / Особняк Курлиной",
@@ -437,7 +465,9 @@ places = [
             "<b>Факты:</b> дом построен для купца I гильдии Александра Курлина и Александры Павловны Курлиной; имел электричество, водопровод, канализацию, телефон и воздушное отопление."
         ],
         "color": "blue",
-        "icon": "star"
+        "icon": "star",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara.%20Kurlina%20Mansion%20P8160488%202200.jpg?width=520",
+        "image_caption": "Особняк Курлиной"
     },
     {
         "name": "Памятник В. И. Чапаеву",
@@ -449,7 +479,9 @@ places = [
             "<b>Факты:</b> автор - скульптор Матвей Манизер; площадь Чапаева занимает около 2,9 га и соединяет театральную и советскую мемориальную линии улицы."
         ],
         "color": "blue",
-        "icon": "screenshot"
+        "icon": "screenshot",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA%20%D0%A7%D0%B0%D0%BF%D0%B0%D0%B5%D0%B2%D1%83%20%D0%B8%20%D1%82%D0%B5%D0%B0%D1%82%D1%80.jpg?width=520",
+        "image_caption": "Памятник Чапаеву"
     },
     {
         "name": "Бункер И. В. Сталина",
@@ -461,7 +493,9 @@ places = [
             "<b>Факты:</b> глубина около 37 м; один из главных материальных символов Куйбышева как запасной столицы СССР в годы Великой Отечественной войны."
         ],
         "color": "blue",
-        "icon": "lock"
+        "icon": "lock",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Frunze%20167.jpg?width=520",
+        "image_caption": "Бункер Сталина"
     },
     {
         "name": "Трамвай на Саратовской / Фрунзе",
@@ -473,7 +507,9 @@ places = [
             "<b>Факты:</b> на открытии участвовали пять вагонов; первый вел инженер П. А. Суткевич; проезд стоил 3 копейки, за первую неделю перевезли 115 тыс. пассажиров."
         ],
         "color": "blue",
-        "icon": "road"
+        "icon": "road",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20tram%201073%202011-06%201307134574%20Frunze%20Street%2071-405.JPG?width=520",
+        "image_caption": "Трамвай на улице Фрунзе"
     },
     {
         "name": "Самарский драматический театр",
@@ -485,7 +521,9 @@ places = [
             "<b>Факты:</b> в 1870 г. здесь сыграла Пелагея Стрепетова; в 1941 г. зрителями театра были эвакуированные в Куйбышев писатели, музыканты и артисты."
         ],
         "color": "blue",
-        "icon": "facetime-video"
+        "icon": "facetime-video",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara.%20Drama%20Theatre%20P8160481%202200.jpg?width=520",
+        "image_caption": "Самарский драматический театр"
     }
 ]
 
@@ -520,8 +558,16 @@ def build_popup_html(place):
         f"<div style=\"margin: 0 0 7px 0;\">{line}</div>"
         for line in details
     )
+    image_html = ""
+    if place.get("image_url"):
+        caption = place.get("image_caption", place["name"])
+        image_html = (
+            f"<img class=\"popup-thumb\" src=\"{place['image_url']}\" alt=\"{caption}\" "
+            "style=\"width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin: 0 0 9px 0;\">"
+        )
     return (
-        "<div style=\"font-size: 14px; line-height: 1.35; min-width: 260px;\">"
+        "<div style=\"font-size: 14px; line-height: 1.35; min-width: 270px; max-width: 340px;\">"
+        f"{image_html}"
         f"<b>{place['name']}</b>"
         "<div style=\"height: 8px;\"></div>"
         f"{detail_html}"
