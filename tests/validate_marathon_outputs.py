@@ -25,6 +25,21 @@ def load_streets():
     raise AssertionError("streets dictionary is missing in map.py")
 
 
+def body_after_frontmatter(text):
+    parts = text.split("---", 2)
+    require(len(parts) == 3, "markdown frontmatter block is missing")
+    return parts[2].lstrip()
+
+
+def require_name_history_table(text, rows, street_label):
+    body = body_after_frontmatter(text)
+    require(body.startswith("| Период | Название |"), f"{street_label} name-history table should follow dataview block")
+    require("|---|---|" in body[:120], f"{street_label} name-history table separator is missing")
+    for period, name in rows:
+        row = f"| {period} | {name} |"
+        require(row in body, f"{street_label} name-history row is missing: {row}")
+
+
 def meters_between(a, b):
     lat1, lon1 = map(math.radians, a)
     lat2, lon2 = map(math.radians, b)
@@ -42,13 +57,27 @@ def main():
     require("date: 04" in text, "dataview date field is missing")
     require("month: 08" in text, "dataview month field is missing")
     require("year: 2026" in text, "dataview year field is missing")
-    require(9500 <= char_count <= 15000, f"md length is {char_count}, expected 9500-15000")
+    require_name_history_table(
+        text,
+        [
+            ("1810-е", "Казачья"),
+            ("1840-е - 1860-е", "Хлебная"),
+            ("1860-е - 1917", "Дворянская"),
+            ("1917", "Керенского"),
+            ("1918 - 28 февраля 1935", "Советская"),
+            ("с 28 февраля 1935", "Куйбышева"),
+        ],
+        "Kuybysheva",
+    )
+    require(9500 <= char_count <= 17000, f"md length is {char_count}, expected 9500-17000")
     require("1586" in text, "published md should include Samara foundation prehistory")
     require("1782" in text, "published md should include the first regular city plan")
     require("1804" in text, "published md should include the early regular-plan expansion")
     require("1839" in text, "published md should connect early plans to the street grid")
     for required_fact in ("6000", "900", "61,2", "70,4", "246,4", "15 000", "89 999"):
         require(required_fact in text, f"published md should include numeric fact: {required_fact}")
+    for new_fact in ("Музей истории войск", "15 апреля 1975", "1913", "Д. А. Вернера", "площадь Революции", "Алексеевская", "1889", "7 ноября 1927"):
+        require(new_fact in text, f"Kuybysheva md should include added museum/square fact: {new_fact}")
     require("## Точки маршрута" not in text, "published md should not contain route point metadata")
     require("## Источники" in text, "sources section is missing")
     require("lat:" not in text, "published md should not contain latitude metadata")
@@ -74,7 +103,14 @@ def main():
         require(expected in kuibysheva_coords, f"OSM street-axis point {expected} is missing")
     require("Бристоль-Жигули" in map_source, "Bristol-Zhiguli marker is missing")
     require("Крестьянский и Дворянский поземельные банки" in map_source, "land banks marker is missing")
+    for marker_name in ("Музей истории войск ПриВО", "Площадь Революции"):
+        require(marker_name in map_source, f"Kuybysheva marker is missing: {marker_name}")
     require("Улица Куйбышева" in html_source, "generated map does not contain Kuybysheva tooltip")
+    require("<b>Адрес:</b>" in html_source, "generated map popups should show address on a separate line")
+    require("<b>Стиль:</b>" in html_source, "generated map popups should show style on a separate line")
+    require("<b>Даты:</b>" in html_source, "generated map popups should show dates on a separate line")
+    require("<b>Факты:</b>" in html_source, "generated map popups should show facts on a separate line")
+    require("line-height: 1.35" in html_source, "generated map popups should use readable multi-line formatting")
 
     require(FRUNZE_MD.exists(), "streets/02-frunze.md is missing")
     frunze_text = FRUNZE_MD.read_text(encoding="utf-8")
@@ -82,12 +118,24 @@ def main():
     require("date: 04" in frunze_text, "Frunze dataview date field is missing")
     require("month: 08" in frunze_text, "Frunze dataview month field is missing")
     require("year: 2026" in frunze_text, "Frunze dataview year field is missing")
-    require(9500 <= frunze_count <= 15000, f"Frunze md length is {frunze_count}, expected 9500-15000")
+    require_name_history_table(
+        frunze_text,
+        [
+            ("XVIII век", "Николаевская / Симбирская"),
+            ("1853 - 1915", "Саратовская"),
+            ("1915 - 16 декабря 1925", "Челышева"),
+            ("с 16 декабря 1925", "Фрунзе"),
+        ],
+        "Frunze",
+    )
+    require(9500 <= frunze_count <= 17000, f"Frunze md length is {frunze_count}, expected 9500-17000")
     require("## Источники" in frunze_text, "Frunze sources section is missing")
     require("lat:" not in frunze_text, "Frunze published md should not contain latitude metadata")
     require("lon:" not in frunze_text, "Frunze published md should not contain longitude metadata")
     for required_fact in ("2,4", "16 декабря 1925", "1853", "1915", "1902-1906", "47", "37", "1907", "1100", "1934"):
         require(required_fact in frunze_text, f"Frunze md should include numeric fact: {required_fact}")
+    for new_fact in ("12 февраля 1915", "Алексеевской площади", "пять вагонов", "22 километров в час", "115 тыс.", "3 копейки", "Драматический театр", "1888", "Михаила Чичагова"):
+        require(new_fact in frunze_text, f"Frunze md should include added tram/theatre fact: {new_fact}")
 
     require('"Фрунзе"' in map_source, "Frunze street data is missing in map.py")
     frunze_coords = streets["Фрунзе"]["coords"]
@@ -97,7 +145,7 @@ def main():
         for i in range(len(frunze_coords) - 1)
     )
     require(frunze_longest_segment < 260, f"Frunze line has a {frunze_longest_segment:.1f}m shortcut segment")
-    for marker_name in ("Музей модерна", "Костел Пресвятого Сердца Иисуса", "Бункер И. В. Сталина", "Дом-музей М. В. Фрунзе"):
+    for marker_name in ("Музей модерна", "Костел Пресвятого Сердца Иисуса", "Бункер И. В. Сталина", "Дом-музей М. В. Фрунзе", "Трамвай на Саратовской / Фрунзе", "Самарский драматический театр"):
         require(marker_name in map_source, f"Frunze marker is missing: {marker_name}")
     require("Улица Фрунзе" in html_source, "generated map does not contain Frunze tooltip")
 
