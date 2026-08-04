@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_876202a8fbdcb96f3d0fe6661020eb20 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_876202a8fbdcb96f3d0fe6661020eb20" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_876202a8fbdcb96f3d0fe6661020eb20 = L.map(
+                "map_876202a8fbdcb96f3d0fe6661020eb20",
+                {
+                    center: [53.1895, 50.09],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2541074fe4a3609d16664cebc1700a28 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2541074fe4a3609d16664cebc1700a28.addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var poly_line_670fa2dfd70ba6fe29c47d471544dce6 = L.polyline(
+                [[53.1787588, 50.0831807], [53.1789357, 50.0833019], [53.1795899, 50.083742], [53.1809004, 50.0846183], [53.1809887, 50.0846502], [53.1810765, 50.084706], [53.1812747, 50.0848317], [53.1815944, 50.0850344], [53.183027, 50.0859725], [53.1830762, 50.0860047], [53.1831783, 50.0860755], [53.183274, 50.0861387], [53.183343, 50.0861843], [53.1849108, 50.0872195], [53.1850215, 50.0872926], [53.1849982, 50.0874388], [53.1849821, 50.0876232], [53.1849861, 50.087759], [53.185003, 50.0879018], [53.1850434, 50.088079], [53.1850811, 50.0881901], [53.1851219, 50.0882722], [53.1851819, 50.0883833], [53.1852572, 50.0884736], [53.1853384, 50.0885401], [53.1854433, 50.0885955], [53.1855745, 50.0886199], [53.1856701, 50.0886064], [53.1857402, 50.0885866], [53.1858105, 50.0885458], [53.1858711, 50.0884922], [53.1859329, 50.0884162], [53.1859827, 50.0883445], [53.1860342, 50.0882605], [53.1860759, 50.0881639], [53.1861047, 50.0880778], [53.1861322, 50.0879869], [53.1862074, 50.088039], [53.1867751, 50.0884215], [53.1878638, 50.0891728], [53.1879423, 50.08923], [53.188055, 50.0893088], [53.189928, 50.0905393], [53.19018, 50.0907127], [53.1902776, 50.0907798], [53.1903957, 50.0908525], [53.1914609, 50.0915276], [53.1925512, 50.0922682], [53.1926695, 50.092347], [53.1927781, 50.0924261], [53.193473, 50.0928922], [53.1938967, 50.0931647], [53.1941363, 50.0933166], [53.1944852, 50.0935421], [53.194882, 50.0937746], [53.1949065, 50.093789], [53.195028, 50.09386], [53.1951062, 50.0939132], [53.1961149, 50.0946093], [53.1964263, 50.0948289], [53.1968271, 50.0950876], [53.1969373, 50.0952047], [53.196954, 50.0952229], [53.1970429, 50.0954308], [53.1970963, 50.0957455], [53.1972129, 50.096033], [53.1973641, 50.0962962], [53.1975417, 50.0965088], [53.1977013, 50.0966459], [53.1978093, 50.0967091], [53.1979213, 50.0967561], [53.1980838, 50.0967825], [53.1985349, 50.0968041], [53.1990054, 50.0968752], [53.1992251, 50.096865]],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e74c3c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.18, "smoothFactor": 1.0, "stroke": true, "weight": 24}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            poly_line_670fa2dfd70ba6fe29c47d471544dce6.bindTooltip(
+                `<div>
+                     Закрашенный коридор: улица Куйбышева
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2014065bbab173d597920d09da6bf3a6 = L.polyline(
+                [[53.1787588, 50.0831807], [53.1789357, 50.0833019], [53.1795899, 50.083742], [53.1809004, 50.0846183], [53.1809887, 50.0846502], [53.1810765, 50.084706], [53.1812747, 50.0848317], [53.1815944, 50.0850344], [53.183027, 50.0859725], [53.1830762, 50.0860047], [53.1831783, 50.0860755], [53.183274, 50.0861387], [53.183343, 50.0861843], [53.1849108, 50.0872195], [53.1850215, 50.0872926], [53.1849982, 50.0874388], [53.1849821, 50.0876232], [53.1849861, 50.087759], [53.185003, 50.0879018], [53.1850434, 50.088079], [53.1850811, 50.0881901], [53.1851219, 50.0882722], [53.1851819, 50.0883833], [53.1852572, 50.0884736], [53.1853384, 50.0885401], [53.1854433, 50.0885955], [53.1855745, 50.0886199], [53.1856701, 50.0886064], [53.1857402, 50.0885866], [53.1858105, 50.0885458], [53.1858711, 50.0884922], [53.1859329, 50.0884162], [53.1859827, 50.0883445], [53.1860342, 50.0882605], [53.1860759, 50.0881639], [53.1861047, 50.0880778], [53.1861322, 50.0879869], [53.1862074, 50.088039], [53.1867751, 50.0884215], [53.1878638, 50.0891728], [53.1879423, 50.08923], [53.188055, 50.0893088], [53.189928, 50.0905393], [53.19018, 50.0907127], [53.1902776, 50.0907798], [53.1903957, 50.0908525], [53.1914609, 50.0915276], [53.1925512, 50.0922682], [53.1926695, 50.092347], [53.1927781, 50.0924261], [53.193473, 50.0928922], [53.1938967, 50.0931647], [53.1941363, 50.0933166], [53.1944852, 50.0935421], [53.194882, 50.0937746], [53.1949065, 50.093789], [53.195028, 50.09386], [53.1951062, 50.0939132], [53.1961149, 50.0946093], [53.1964263, 50.0948289], [53.1968271, 50.0950876], [53.1969373, 50.0952047], [53.196954, 50.0952229], [53.1970429, 50.0954308], [53.1970963, 50.0957455], [53.1972129, 50.096033], [53.1973641, 50.0962962], [53.1975417, 50.0965088], [53.1977013, 50.0966459], [53.1978093, 50.0967091], [53.1979213, 50.0967561], [53.1980838, 50.0967825], [53.1985349, 50.0968041], [53.1990054, 50.0968752], [53.1992251, 50.096865]],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e74c3c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            poly_line_2014065bbab173d597920d09da6bf3a6.bindTooltip(
+                `<div>
+                     Улица Куйбышева
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_04ce72664e09a0957afd5ee7d2e73e98 = L.polyline(
+                [[53.178791, 50.085764], [53.198738, 50.0989]],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3498db", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            poly_line_04ce72664e09a0957afd5ee7d2e73e98.bindTooltip(
+                `<div>
+                     Улица Фрунзе
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_88c923aaee9b3e5f2a2ec354f55020f1 = L.marker(
+                [53.189266, 50.090365],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_670a384a4df1d2e15a1d187bbf6ca553 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bullhorn",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cde2d05440e8496fe281633cfeab9e8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c462c02db2e64ca9232622a118519e0f = $(`<div id="html_c462c02db2e64ca9232622a118519e0f" style="width: 100.0%; height: 100.0%;"><b>Гранд-Отель / Бристоль-Жигули</b><br><br>ул. Куйбышева, 111. Модерн после реконструкции 1908-1909 гг. В 1909 г. здесь останавливался Федор Шаляпин; балконный концерт — городское предание.</div>`)[0];
+                popup_cde2d05440e8496fe281633cfeab9e8c.setContent(html_c462c02db2e64ca9232622a118519e0f);
+            
+        
+
+        marker_88c923aaee9b3e5f2a2ec354f55020f1.bindPopup(popup_cde2d05440e8496fe281633cfeab9e8c)
+        ;
+
+        
+    
+    
+                marker_88c923aaee9b3e5f2a2ec354f55020f1.setIcon(icon_670a384a4df1d2e15a1d187bbf6ca553);
+            
+    
+            var marker_a05f4806c736faf11c2292210c120023 = L.marker(
+                [53.189749, 50.090797],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_08459574e29c3e1952fabb4ba5f35986 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e9ef62ea5fe911d976784c0dbbb1c4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13da63ea32beca7cde7018f02f538893 = $(`<div id="html_13da63ea32beca7cde7018f02f538893" style="width: 100.0%; height: 100.0%;"><b>Лютеранская кирха Святого Георга</b><br><br>ул. Куйбышева, 115-117. Комплекс 1865-1875 гг.: католический замысел Егора Аннаева, затем лютеранский храм.</div>`)[0];
+                popup_1e9ef62ea5fe911d976784c0dbbb1c4d.setContent(html_13da63ea32beca7cde7018f02f538893);
+            
+        
+
+        marker_a05f4806c736faf11c2292210c120023.bindPopup(popup_1e9ef62ea5fe911d976784c0dbbb1c4d)
+        ;
+
+        
+    
+    
+                marker_a05f4806c736faf11c2292210c120023.setIcon(icon_08459574e29c3e1952fabb4ba5f35986);
+            
+    
+            var marker_0d0220c98014b03d595fa2ed154eb5ab = L.marker(
+                [53.189427, 50.089827],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_2b9635b45e7ac1b935cab3f8cd07b9de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "usd",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e30584996f9f908bb1d1754f5a528a4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8579e46925c0a980a666c206b29cf01c = $(`<div id="html_8579e46925c0a980a666c206b29cf01c" style="width: 100.0%; height: 100.0%;"><b>Волжско-Камский коммерческий банк</b><br><br>ул. Куйбышева, 92. Неоклассицизм, 1913-1915 гг., арх. В. И. Якунин. Ныне — Самарский художественный музей.</div>`)[0];
+                popup_e30584996f9f908bb1d1754f5a528a4a.setContent(html_8579e46925c0a980a666c206b29cf01c);
+            
+        
+
+        marker_0d0220c98014b03d595fa2ed154eb5ab.bindPopup(popup_e30584996f9f908bb1d1754f5a528a4a)
+        ;
+
+        
+    
+    
+                marker_0d0220c98014b03d595fa2ed154eb5ab.setIcon(icon_2b9635b45e7ac1b935cab3f8cd07b9de);
+            
+    
+            var marker_5877c5bb3239b4d9f1afd6a3eaaf8ff8 = L.marker(
+                [53.188665, 50.089997],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_13fbdde395e0460526fae042c5e531b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89756602a8e249364a8bc059441c9603 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9faa9af2ec9ab9a1c64a7847d49d568 = $(`<div id="html_c9faa9af2ec9ab9a1c64a7847d49d568" style="width: 100.0%; height: 100.0%;"><b>Кинотеатр «Художественный»</b><br><br>ул. Куйбышева, 105. Открыт в 1913 г.</div>`)[0];
+                popup_89756602a8e249364a8bc059441c9603.setContent(html_c9faa9af2ec9ab9a1c64a7847d49d568);
+            
+        
+
+        marker_5877c5bb3239b4d9f1afd6a3eaaf8ff8.bindPopup(popup_89756602a8e249364a8bc059441c9603)
+        ;
+
+        
+    
+    
+                marker_5877c5bb3239b4d9f1afd6a3eaaf8ff8.setIcon(icon_13fbdde395e0460526fae042c5e531b0);
+            
+    
+            var marker_7ba34c239a803d20a796b464a9990a47 = L.marker(
+                [53.193431, 50.093168],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_3d9ab39eb2344d4f8778a5545592ecbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b39b90fce6cbf5eff7861295b4b1fbda = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33ccf93bc2a25cd082b760c9bb2352c2 = $(`<div id="html_33ccf93bc2a25cd082b760c9bb2352c2" style="width: 100.0%; height: 100.0%;"><b>Особняк Клодта</b><br><br>ул. Куйбышева, 139. Особняк в духе немецкого ренессанса; ныне Детская картинная галерея.</div>`)[0];
+                popup_b39b90fce6cbf5eff7861295b4b1fbda.setContent(html_33ccf93bc2a25cd082b760c9bb2352c2);
+            
+        
+
+        marker_7ba34c239a803d20a796b464a9990a47.bindPopup(popup_b39b90fce6cbf5eff7861295b4b1fbda)
+        ;
+
+        
+    
+    
+                marker_7ba34c239a803d20a796b464a9990a47.setIcon(icon_3d9ab39eb2344d4f8778a5545592ecbb);
+            
+    
+            var marker_6ca2adb5f7703b50b2920c879db19438 = L.marker(
+                [53.195796, 50.094895],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_f94462f240acb52d926e3b5001fb8eba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "globe",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05c168fe20a47782318e29ab2e297b36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51a67c6e196520264f1b5bae1bdde95b = $(`<div id="html_51a67c6e196520264f1b5bae1bdde95b" style="width: 100.0%; height: 100.0%;"><b>Особняк Наумова / посольство Великобритании</b><br><br>ул. Куйбышева, 151. Особняк губернского предводителя дворянства; в годы запасной столицы здесь размещалось посольство Великобритании.</div>`)[0];
+                popup_05c168fe20a47782318e29ab2e297b36.setContent(html_51a67c6e196520264f1b5bae1bdde95b);
+            
+        
+
+        marker_6ca2adb5f7703b50b2920c879db19438.bindPopup(popup_05c168fe20a47782318e29ab2e297b36)
+        ;
+
+        
+    
+    
+                marker_6ca2adb5f7703b50b2920c879db19438.setIcon(icon_f94462f240acb52d926e3b5001fb8eba);
+            
+    
+            var marker_5766b3b11460d78399a1688e962ba9ed = L.marker(
+                [53.19208, 50.091617],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_08eb64eb5bb798d2d94bd328dbb00051 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "lock",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69647b48d183d15a43839ab41acdebaf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d0b3b4ee3d912374b98ef9c3ecc8d18 = $(`<div id="html_2d0b3b4ee3d912374b98ef9c3ecc8d18" style="width: 100.0%; height: 100.0%;"><b>Отделение Государственного банка</b><br><br>ул. Куйбышева, 112. Сохранило свой финансовый профиль с дореволюционных времен.</div>`)[0];
+                popup_69647b48d183d15a43839ab41acdebaf.setContent(html_2d0b3b4ee3d912374b98ef9c3ecc8d18);
+            
+        
+
+        marker_5766b3b11460d78399a1688e962ba9ed.bindPopup(popup_69647b48d183d15a43839ab41acdebaf)
+        ;
+
+        
+    
+    
+                marker_5766b3b11460d78399a1688e962ba9ed.setIcon(icon_08eb64eb5bb798d2d94bd328dbb00051);
+            
+    
+            var marker_f6658a38f3bb663f637183092045ee4d = L.marker(
+                [53.191759, 50.092124],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_2c2ea8981b9ac02be0560bd3c7180dd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bookmark",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbd1a0ca06e85db35c815a0ffbc3a80a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d60ccea2bb3d7a6333e82b586942fa0 = $(`<div id="html_2d60ccea2bb3d7a6333e82b586942fa0" style="width: 100.0%; height: 100.0%;"><b>Благородное собрание</b><br><br>ул. Куйбышева, 131. Площадка выставок и собраний; в 1898 г. здесь открылся Самарский публичный музей.</div>`)[0];
+                popup_fbd1a0ca06e85db35c815a0ffbc3a80a.setContent(html_2d60ccea2bb3d7a6333e82b586942fa0);
+            
+        
+
+        marker_f6658a38f3bb663f637183092045ee4d.bindPopup(popup_fbd1a0ca06e85db35c815a0ffbc3a80a)
+        ;
+
+        
+    
+    
+                marker_f6658a38f3bb663f637183092045ee4d.setIcon(icon_2c2ea8981b9ac02be0560bd3c7180dd0);
+            
+    
+            var marker_f04eba6c2b52d7acf6f8fb1751e393a6 = L.marker(
+                [53.187371, 50.089286],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_c15bbc46592e2fae37aea44b3512d05c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "transfer",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04d727aa30d112508515e0fa80aab818 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69b09682590396eee29c8b845d45364c = $(`<div id="html_69b09682590396eee29c8b845d45364c" style="width: 100.0%; height: 100.0%;"><b>Дом купца Аржанова</b><br><br>ул. Куйбышева, 93. Адрес первой советской трудовой сберкассы; позднее точка обмена валюты.</div>`)[0];
+                popup_04d727aa30d112508515e0fa80aab818.setContent(html_69b09682590396eee29c8b845d45364c);
+            
+        
+
+        marker_f04eba6c2b52d7acf6f8fb1751e393a6.bindPopup(popup_04d727aa30d112508515e0fa80aab818)
+        ;
+
+        
+    
+    
+                marker_f04eba6c2b52d7acf6f8fb1751e393a6.setIcon(icon_c15bbc46592e2fae37aea44b3512d05c);
+            
+    
+            var marker_8d727e484b660160193670fe5a036113 = L.marker(
+                [53.196, 50.0952],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_ff8d867227a61315e34b9134ca33937f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "education",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b20deb661b2d8a30dfe33467d0ac7f57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d1494477be378122d18ecf48b807479 = $(`<div id="html_2d1494477be378122d18ecf48b807479" style="width: 100.0%; height: 100.0%;"><b>Крестьянский и Дворянский поземельные банки</b><br><br>ул. Куйбышева, 153. Один из сильнейших модерновых акцентов улицы; ныне связан с СамГТУ.</div>`)[0];
+                popup_b20deb661b2d8a30dfe33467d0ac7f57.setContent(html_2d1494477be378122d18ecf48b807479);
+            
+        
+
+        marker_8d727e484b660160193670fe5a036113.bindPopup(popup_b20deb661b2d8a30dfe33467d0ac7f57)
+        ;
+
+        
+    
+    
+                marker_8d727e484b660160193670fe5a036113.setIcon(icon_ff8d867227a61315e34b9134ca33937f);
+            
+    
+            var marker_99356420c69abb75cb9bc7dd3875cf9e = L.marker(
+                [53.194462, 50.0938],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_184d693a1a8c38f436d4b14705c969eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a081ffc95368a8cb9770607887f892ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b963fa25d3eb845d50a85a0ba65a36f = $(`<div id="html_5b963fa25d3eb845d50a85a0ba65a36f" style="width: 100.0%; height: 100.0%;"><b>Дом промышленности</b><br><br>ул. Куйбышева, 145. Конструктивистский советский слой главной улицы.</div>`)[0];
+                popup_a081ffc95368a8cb9770607887f892ab.setContent(html_5b963fa25d3eb845d50a85a0ba65a36f);
+            
+        
+
+        marker_99356420c69abb75cb9bc7dd3875cf9e.bindPopup(popup_a081ffc95368a8cb9770607887f892ab)
+        ;
+
+        
+    
+    
+                marker_99356420c69abb75cb9bc7dd3875cf9e.setIcon(icon_184d693a1a8c38f436d4b14705c969eb);
+            
+    
+            var marker_0e473547721c9de671b582902adc426a = L.marker(
+                [53.187571, 50.089139],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_e5ca8f6a164f5fcbd3e25c225891b595 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf45f703f91583ac51aee2f635bd92f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88c12175fd8664064694fc4d41ea1c0b = $(`<div id="html_88c12175fd8664064694fc4d41ea1c0b" style="width: 100.0%; height: 100.0%;"><b>Самарская публичная библиотека</b><br><br>ул. Куйбышева, 95. Дом купца Христензена; важный библиотечный адрес Самары.</div>`)[0];
+                popup_bf45f703f91583ac51aee2f635bd92f6.setContent(html_88c12175fd8664064694fc4d41ea1c0b);
+            
+        
+
+        marker_0e473547721c9de671b582902adc426a.bindPopup(popup_bf45f703f91583ac51aee2f635bd92f6)
+        ;
+
+        
+    
+    
+                marker_0e473547721c9de671b582902adc426a.setIcon(icon_e5ca8f6a164f5fcbd3e25c225891b595);
+            
+    
+            var marker_4b928879e5b44c4c7f8a4f926508d227 = L.marker(
+                [53.1869, 50.0882],
+                {
+}
+            ).addTo(map_876202a8fbdcb96f3d0fe6661020eb20);
+        
+    
+            var icon_1ecf2c2ce38122de36e87e98349798fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tower",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f371b4da289fed1991ad1ad08993192b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8d939fa470f98d042f33e73e4146f4d = $(`<div id="html_e8d939fa470f98d042f33e73e4146f4d" style="width: 100.0%; height: 100.0%;"><b>Дом купца Белоусова</b><br><br>ул. Куйбышева, 72. Редкий для Самары пример неомавританской стилизации.</div>`)[0];
+                popup_f371b4da289fed1991ad1ad08993192b.setContent(html_e8d939fa470f98d042f33e73e4146f4d);
+            
+        
+
+        marker_4b928879e5b44c4c7f8a4f926508d227.bindPopup(popup_f371b4da289fed1991ad1ad08993192b)
+        ;
+
+        
+    
+    
+                marker_4b928879e5b44c4c7f8a4f926508d227.setIcon(icon_1ecf2c2ce38122de36e87e98349798fc);
+            
+</script>
+</html>
