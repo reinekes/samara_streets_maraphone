@@ -2318,58 +2318,171 @@ places = [
 
 
 # ==========================================
-# 3. ОТРИСОВКА КАРТЫ
+# 3. ОТРИСОВКА КАРТЫ С ПЕРЕКЛЮЧАТЕЛЯМИ УЛИЦ
 # ==========================================
 
-# Закраска коридора улицы и отрисовка линий
+# ------------------------------------------
+# Соответствие цвета маркера -> улица
+# ------------------------------------------
+marker_color_to_street = {
+    "red": "Куйбышева",
+    "blue": "Фрунзе",
+    "green": "Ленинградская",
+    "orange": "Самарская",
+    "purple": "Молодогвардейская",
+    "cadetblue": "Чапаевская",
+    "beige": "Льва Толстого",
+}
+
+
+# ------------------------------------------
+# Создаем отдельный слой для каждой улицы
+# ------------------------------------------
+street_layers = {}
+
+for street_name in streets:
+    street_layers[street_name] = folium.FeatureGroup(
+        name=f"🛣 {street_name}",
+        overlay=True,
+        control=True,
+        show=False,   # True = улица включена при открытии карты
+    )
+
+    street_layers[street_name].add_to(samara_map)
+
+
+# ------------------------------------------
+# Линии улиц
+# ------------------------------------------
 for street_name, data in streets.items():
-    if "highlight_weight" in data:
+
+    layer = street_layers[street_name]
+
+    # Полупрозрачная подложка / коридор
+    if data.get("highlight_weight", 0) > 1:
         folium.PolyLine(
             locations=data["coords"],
             color=data["color"],
             weight=data["highlight_weight"],
             opacity=0.18,
-            tooltip=f"Закрашенный коридор: улица {street_name}"
-        ).add_to(samara_map)
+            tooltip=f"Улица {street_name}"
+        ).add_to(layer)
 
+    # Основная линия
     folium.PolyLine(
         locations=data["coords"],
         color=data["color"],
-        weight=6,       
-        opacity=0.8,    
+        weight=6,
+        opacity=0.8,
         tooltip=f"Улица {street_name}"
-    ).add_to(samara_map)
+    ).add_to(layer)
 
-# Отрисовка маркеров
+
+# ------------------------------------------
+# HTML всплывающего окна
+# ------------------------------------------
 def build_popup_html(place):
-    details = place["info"] if isinstance(place["info"], list) else [place["info"]]
+    details = (
+        place["info"]
+        if isinstance(place["info"], list)
+        else [place["info"]]
+    )
+
     detail_html = "".join(
-        f"<div style=\"margin: 0 0 7px 0;\">{line}</div>"
+        f'<div style="margin: 0 0 7px 0;">{line}</div>'
         for line in details
     )
+
     image_html = ""
+
     if place.get("image_url"):
-        caption = place.get("image_caption", place["name"])
-        image_html = (
-            f"<img class=\"popup-thumb\" src=\"{place['image_url']}\" alt=\"{caption}\" "
-            "style=\"width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin: 0 0 9px 0;\">"
+        caption = place.get(
+            "image_caption",
+            place["name"]
         )
+
+        image_html = (
+            f'<img class="popup-thumb" '
+            f'src="{place["image_url"]}" '
+            f'alt="{caption}" '
+            f'style="'
+            f'width: 100%; '
+            f'height: 150px; '
+            f'object-fit: cover; '
+            f'border-radius: 6px; '
+            f'margin: 0 0 9px 0;'
+            f'">'
+        )
+
     return (
-        "<div style=\"font-size: 14px; line-height: 1.35; min-width: 270px; max-width: 340px;\">"
-        f"{image_html}"
-        f"<b>{place['name']}</b>"
-        "<div style=\"height: 8px;\"></div>"
-        f"{detail_html}"
-        "</div>"
+        '<div style="'
+        'font-size: 14px; '
+        'line-height: 1.35; '
+        'min-width: 270px; '
+        'max-width: 340px;'
+        '">'
+        f'{image_html}'
+        f'<b>{place["name"]}</b>'
+        '<div style="height: 8px;"></div>'
+        f'{detail_html}'
+        '</div>'
     )
 
 
+# ------------------------------------------
+# Маркеры распределяем по слоям улиц
+# ------------------------------------------
 for place in places:
+
+    street_name = marker_color_to_street.get(
+        place["color"]
+    )
+
+    # Если цвет не привязан к улице —
+    # добавляем маркер просто на карту
+    target_layer = street_layers.get(
+        street_name,
+        samara_map
+    )
+
     folium.Marker(
         location=place["coords"],
-        popup=folium.Popup(build_popup_html(place), max_width=380),
-        icon=folium.Icon(color=place["color"], icon=place.get("icon", "info-sign"))
-    ).add_to(samara_map)
 
-samara_map.save("samara_marathon_map.html")
-print("Карта успешно обновлена: samara_marathon_map.html")
+        popup=folium.Popup(
+            build_popup_html(place),
+            max_width=380
+        ),
+
+        tooltip=place["name"],
+
+        icon=folium.Icon(
+            color=place["color"],
+            icon=place.get(
+                "icon",
+                "info-sign"
+            )
+        )
+
+    ).add_to(target_layer)
+
+
+# ------------------------------------------
+# Переключатель слоев
+# ------------------------------------------
+folium.LayerControl(
+    position="topright",
+    collapsed=False
+).add_to(samara_map)
+
+
+# ------------------------------------------
+# Сохранение
+# ------------------------------------------
+samara_map.save(
+    "samara_marathon_map.html"
+)
+
+print(
+    "Карта успешно обновлена: "
+    "samara_marathon_map.html"
+)
