@@ -1,6 +1,14 @@
+import html as html_lib
+import json
+import re
+from pathlib import Path
+
 import folium
 from branca.element import MacroElement
 from jinja2 import Template
+
+ROOT_DIR = Path(__file__).resolve().parent
+HERITAGE_GEOJSON = ROOT_DIR / "data" / "heritage_objects.geojson"
 
 # Базовая карта (сцентрована на историческую Самару)
 samara_map = folium.Map(location=[53.1895, 50.0900], zoom_start=15)
@@ -5818,6 +5826,130 @@ places = [
 ]
 
 
+def strip_tags(value):
+    return re.sub(
+        r"\s+",
+        " ",
+        re.sub(r"<[^>]+>", " ", html_lib.unescape(value or ""))
+    ).strip()
+
+
+def extract_heritage_field(description, label):
+    pattern = rf"{re.escape(label)}:\s*(.*?)(?:<br\s*/?>|$)"
+    match = re.search(pattern, description or "", flags=re.IGNORECASE)
+    if not match:
+        return ""
+    return strip_tags(match.group(1))
+
+
+def load_heritage_objects(path=HERITAGE_GEOJSON):
+    if not path.exists():
+        return []
+
+    data = json.loads(path.read_text(encoding="utf-8"))
+    heritage_objects = []
+
+    for feature in data.get("features", []):
+        geometry = feature.get("geometry") or {}
+        if geometry.get("type") != "Point":
+            continue
+
+        coordinates = geometry.get("coordinates") or []
+        if len(coordinates) < 2:
+            continue
+
+        lon, lat = coordinates[:2]
+        properties = feature.get("properties") or {}
+        description = properties.get("description", "")
+        category = extract_heritage_field(description, "Категория")
+
+        heritage_objects.append(
+            {
+                "id": feature.get("id"),
+                "name": strip_tags(properties.get("name", "")),
+                "coords": [lat, lon],
+                "registry": extract_heritage_field(
+                    description,
+                    "Регистрационный номер в реестре",
+                ),
+                "kind": extract_heritage_field(description, "Вид объекта"),
+                "category": category,
+                "created": extract_heritage_field(
+                    description,
+                    "Время создания объекта",
+                ),
+                "address": extract_heritage_field(description, "Адрес"),
+                "protection": extract_heritage_field(
+                    description,
+                    "Документ принятия на охрану",
+                ),
+                "style_name": properties.get("styleName", ""),
+            }
+        )
+
+    return heritage_objects
+
+
+def heritage_marker_color(heritage_object):
+    category = heritage_object.get("category", "").lower()
+    style_name = heritage_object.get("style_name", "")
+
+    if "федераль" in category or "federal" in style_name:
+        return "red"
+    if "регион" in category or "regional" in style_name:
+        return "darkgreen"
+    return "gray"
+
+
+def build_heritage_popup_html(heritage_object):
+    field_rows = [
+        ("Адрес", heritage_object.get("address")),
+        ("Категория", heritage_object.get("category")),
+        ("Вид объекта", heritage_object.get("kind")),
+        ("Время создания", heritage_object.get("created")),
+        ("Регистрационный номер", heritage_object.get("registry")),
+        ("Документ принятия на охрану", heritage_object.get("protection")),
+    ]
+
+    details_html = "".join(
+        f'<div style="margin: 0 0 7px 0;">'
+        f'<b>{label}:</b> {html_lib.escape(value)}'
+        f'</div>'
+        for label, value in field_rows
+        if value
+    )
+
+    object_id = heritage_object.get("id")
+    id_html = ""
+    if object_id is not None:
+        id_html = (
+            '<div style="margin: 8px 0 0 0; color: #5f6368;">'
+            f'GeoJSON ID: {html_lib.escape(str(object_id))}'
+            '</div>'
+        )
+
+    return (
+        '<div class="heritage-marker" style="'
+        'font-size: 14px; '
+        'line-height: 1.35; '
+        'min-width: 280px; '
+        'max-width: 360px;'
+        '">'
+        '<div style="'
+        'font-size: 12px; '
+        'font-weight: 700; '
+        'letter-spacing: 0; '
+        'color: #0b7d3b; '
+        'margin: 0 0 6px 0;'
+        '">Объект культурного наследия</div>'
+        f'<b>{html_lib.escape(heritage_object["name"])}</b>'
+        '<div style="height: 8px;"></div>'
+        f'{details_html}'
+        f'{id_html}'
+        '</div>'
+    )
+
+
 # ==========================================
 # 3. ОТРИСОВКА КАРТЫ С ПЕРЕКЛЮЧАТЕЛЯМИ УЛИЦ
 # ==========================================
@@ -6068,6 +6200,38 @@ for place in places:
         )
 
     ).add_to(target_layer)
+
+
+# ------------------------------------------
+# Отдельный слой объектов культурного наследия
+# ------------------------------------------
+heritage_layer = folium.FeatureGroup(
+    name="✓ Объекты культурного наследия",
+    overlay=True,
+    control=True,
+    show=False,
+)
+heritage_layer.add_to(samara_map)
+
+for heritage_object in load_heritage_objects():
+    folium.Marker(
+        location=heritage_object["coords"],
+
+        popup=folium.Popup(
+            build_heritage_popup_html(heritage_object),
+            max_width=400
+        ),
+
+        tooltip=heritage_object["name"],
+
+        icon=folium.Icon(
+            color=heritage_marker_color(heritage_object),
+            icon_color="white",
+            icon="ok-sign",
+            prefix="glyphicon",
+        )
+
+    ).add_to(heritage_layer)
 
 
 # ------------------------------------------
