@@ -53,6 +53,25 @@ def extract_commons_file_title(url):
     raise AssertionError(f"unsupported Commons image URL format: {url}")
 
 
+def validate_direct_image_url(url):
+    request = Request(
+        url,
+        headers={"User-Agent": "SamaraMapImageValidator/1.0"},
+        method="HEAD",
+    )
+    with urlopen(request, timeout=15) as response:
+        content_type = response.headers.get("content-type", "")
+        if content_type.startswith("image/"):
+            return None
+
+    request = Request(url, headers={"User-Agent": "SamaraMapImageValidator/1.0"})
+    with urlopen(request, timeout=15) as response:
+        content_type = response.headers.get("content-type", "")
+        if not content_type.startswith("image/"):
+            return f"{url}: invalid content-type {content_type}"
+    return None
+
+
 def fetch_file_metadata(titles):
     request = Request(
         COMMONS_API
@@ -130,6 +149,7 @@ def main():
 
     markdown_urls = extract_markdown_urls(markdown_path)
     url_to_title = {}
+    direct_urls = []
     failures = []
 
     for place in street_places:
@@ -141,15 +161,30 @@ def main():
         try:
             url_to_title[url] = extract_commons_file_title(url)
         except AssertionError as error:
-            failures.append(f"{place['name']}: {error}")
+            if url.startswith("https://"):
+                direct_urls.append((place["name"], url))
+            else:
+                failures.append(f"{place['name']}: {error}")
 
     for url in markdown_urls:
         try:
             url_to_title[url] = extract_commons_file_title(url)
         except AssertionError as error:
-            failures.append(f"markdown image: {error}")
+            if url.startswith("https://"):
+                direct_urls.append(("markdown image", url))
+            else:
+                failures.append(f"markdown image: {error}")
 
     failures.extend(validate_file_titles(url_to_title.values()))
+    for label, url in direct_urls:
+        try:
+            direct_failure = validate_direct_image_url(url)
+        except HTTPError as error:
+            direct_failure = f"{url}: HTTP {error.code}"
+        except URLError as error:
+            direct_failure = f"{url}: network error {error.reason}"
+        if direct_failure:
+            failures.append(f"{label}: {direct_failure}")
 
     require(
         not failures,
