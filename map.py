@@ -3245,7 +3245,9 @@ places = [
         "<b>Контекст:</b> западный участок Галактионовской показывает уже не купеческую Троицкую, а Куйбышев инженеров, проектных институтов и модернистской застройки."
     ],
     "color": "pink",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Деревянный дом с резьбой",
@@ -3258,7 +3260,9 @@ places = [
         "<b>Почему важно:</b> такие дома показывают повседневную Самару, которая существовала рядом с банками, гимназиями и купеческими особняками."
     ],
     "color": "pink",
-    "icon": "tree-deciduous"
+    "icon": "tree-deciduous",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Воскресенская пожарная часть / МЧС",
@@ -3271,7 +3275,9 @@ places = [
         "<b>Сегодня:</b> участок сохраняет связь с противопожарной службой; здесь находятся структуры МЧС."
     ],
     "color": "pink",
-    "icon": "fire"
+    "icon": "fire",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Сталинский жилой дом",
@@ -3284,7 +3290,9 @@ places = [
         "<b>Контекст:</b> расположен рядом с участками проектных и административных зданий позднего Куйбышева."
     ],
     "color": "pink",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Дом Кошелевой / гостиница «Европа»",
@@ -3296,7 +3304,9 @@ places = [
         "<b>Маркер эпохи:</b> рядом с гимназиями и доходными домами видна Самара рубежа XIX-XX веков: учебная, гостиничная, служебная."
     ],
     "color": "pink",
-    "icon": "bed"
+    "icon": "bed",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "2-я женская гимназия / дом Юрина",
@@ -3325,7 +3335,9 @@ places = [
         "<b>Почему важно:</b> дом хорошо показывает проблему частичной сохранности: здание стоит, но часть архитектурного смысла уже потеряна."
     ],
     "color": "pink",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Первая мужская гимназия",
@@ -3355,7 +3367,9 @@ places = [
         "<b>Контекст:</b> этот участок напоминает о Куйбышеве как городе промышленного проектирования и нефтехимической инфраструктуры."
     ],
     "color": "pink",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Общежитие планового института",
@@ -3367,7 +3381,9 @@ places = [
         "<b>Контекст:</b> один адрес удерживает сразу два учебных слоя: духовное образование старой Самары и советскую систему подготовки специалистов."
     ],
     "color": "pink",
-    "icon": "book"
+    "icon": "book",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Дом Аржановых",
@@ -3379,7 +3395,9 @@ places = [
         "<b>Контекст:</b> рядом с деревянными домами и доходной застройкой показывает непарадную, жилую Троицкую."
     ],
     "color": "pink",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Усадьба Кашпирова / Уварова",
@@ -3392,7 +3410,9 @@ places = [
         "<b>Примечание:</b> точка поставлена по соседним проверенным адресам квартала."
     ],
     "color": "pink",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Дом МВД",
@@ -3405,7 +3425,9 @@ places = [
         "<b>Контекст:</b> показывает, как улица после 1930-х становится адресом учреждений и ведомственного жилья."
     ],
     "color": "pink",
-    "icon": "lock"
+    "icon": "lock",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Дом Tom Sawyer Fest",
@@ -3418,7 +3440,9 @@ places = [
         "<b>Почему важно:</b> это уже история XXI века: наследие сохраняют не только документы и музеи, но и городские инициативы."
     ],
     "color": "pink",
-    "icon": "leaf"
+    "icon": "leaf",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Деревянный модерн / дом Когана",
@@ -3432,7 +3456,9 @@ places = [
         "<b>Сегодня:</b> адрес воспринимается не только как памятник, но и как городское культурное место."
     ],
     "color": "pink",
-    "icon": "star"
+    "icon": "star",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Культовая «Пельменная»",
@@ -3444,7 +3470,9 @@ places = [
         "<b>Контекст:</b> такие места показывают повседневную Самару лучше многих официальных памятников."
     ],
     "color": "pink",
-    "icon": "cutlery"
+    "icon": "cutlery",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Подпольная печать «Самарской Луки»",
@@ -3471,7 +3499,9 @@ places = [
         "<b>Контекст:</b> напоминание о том, что Галактионовская была не только жилой и учебной, но и мелкопроизводственной улицей."
     ],
     "color": "pink",
-    "icon": "gift"
+    "icon": "gift",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Особняк купца Николая Жоголева",
@@ -3486,7 +3516,9 @@ places = [
         "<b>XX век:</b> в 1970-е здесь размещались разные организации, в начале 1990-х - областной туристический клуб «Жигули»."
     ],
     "color": "pink",
-    "icon": "star"
+    "icon": "star",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Гостиница Жоголевых / рок-бар «Подвал»",
@@ -3499,7 +3531,9 @@ places = [
         "<b>Примечание:</b> точка поставлена по соседним проверенным адресам квартала."
     ],
     "color": "pink",
-    "icon": "music"
+    "icon": "music",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Дом купца Кудряшова / Цветаева и Эфрон",
@@ -3560,7 +3594,9 @@ places = [
         "<b>Сегодня:</b> исторический центр узла читается через Дом специалистов, торговые ряды и сквер Высоцкого."
     ],
     "color": "pink",
-    "icon": "tower"
+    "icon": "tower",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Жилой дом начала XX века",
@@ -3603,7 +3639,9 @@ places = [
         "<b>Факты:</b> оба адреса утрачены; точка поставлена по историческому участку нижней Галактионовской."
     ],
     "color": "pink",
-    "icon": "remove"
+    "icon": "remove",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%20141%202026.jpg?width=520",
+    "image_caption": "Галактионовская: контекст улицы"
 },
 {
     "name": "Некрасовская на регулярном плане 1782 года",
@@ -3647,7 +3685,9 @@ places = [
         "<b>До галереи:</b> здесь находилось советское кафе «Солнышко»."
     ],
     "color": "darkpurple",
-    "icon": "picture"
+    "icon": "picture",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Некрасовская, 10: нижний исторический квартал",
@@ -3660,7 +3700,9 @@ places = [
         "<b>Контекст:</b> рядом улица физически поднимается от Волги к Куйбышева."
     ],
     "color": "darkpurple",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Дом удельного ведомства",
@@ -3673,7 +3715,9 @@ places = [
         "<b>1918 год:</b> в здании располагалось Ведомство земледелия КОМУЧа."
     ],
     "color": "darkpurple",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Перекресток Предтеченской и Дворянской",
@@ -3715,7 +3759,9 @@ places = [
         "<b>Деталь:</b> в конце 1960-х рядом появилось мозаичное панно «Гражданская авиация»."
     ],
     "color": "darkpurple",
-    "icon": "tree-deciduous"
+    "icon": "tree-deciduous",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Театр «Камерная сцена» / клуб «Рассвет»",
@@ -3744,7 +3790,9 @@ places = [
         "<b>Гости:</b> в источниках упоминаются визиты Жака Ширака в 2001 г. и Пьера Ришара в 2011 г."
     ],
     "color": "darkpurple",
-    "icon": "bed"
+    "icon": "bed",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Администрация Самарского района / дом Кристенсен",
@@ -3757,7 +3805,9 @@ places = [
         "<b>Контекст:</b> пример того, как купеческое жилье превращается в районную административную точку."
     ],
     "color": "darkpurple",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Дом Белавина и Алеша Толстой",
@@ -3770,7 +3820,9 @@ places = [
         "<b>Для маршрута:</b> адрес связывает Некрасовскую с литературной Самарой и уже пройденной улицей Алексея Толстого."
     ],
     "color": "darkpurple",
-    "icon": "pencil"
+    "icon": "pencil",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Дом Юрина",
@@ -3798,7 +3850,9 @@ places = [
         "<b>Контекст:</b> место хорошо показывает смену городской функции: ярмарочное зрелище сменяется массовым советским жильем."
     ],
     "color": "darkpurple",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Жилой дом на Некрасовской, 49",
@@ -3871,7 +3925,9 @@ places = [
         "<b>Деталь:</b> после надстройки сохранился характерный пояс сине-зеленой плитки."
     ],
     "color": "darkpurple",
-    "icon": "shopping-cart"
+    "icon": "shopping-cart",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Дом Егорова-Андреева и Шведский Красный крест",
@@ -3884,7 +3940,9 @@ places = [
         "<b>Современный слой:</b> в 2024 г. здание выставляли на торги с обязательством реконструкции."
     ],
     "color": "darkpurple",
-    "icon": "plus"
+    "icon": "plus",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Дом Ратнеров: фабрика, кинотеатр и посольство США",
@@ -3911,7 +3969,9 @@ places = [
         "<b>Для маршрута:</b> точка удобна как переход от модернового квартала к бывшей Троицкой улице."
     ],
     "color": "darkpurple",
-    "icon": "glass"
+    "icon": "glass",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Дом «Востокнефтестроя»",
@@ -3925,7 +3985,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Некрасовская, 69 из OSM."
     ],
     "color": "darkpurple",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Дом профессоров строительного института",
@@ -3939,7 +4001,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по координате Ginfo для Некрасовской, 74: 53.187969, 50.101025."
     ],
     "color": "darkpurple",
-    "icon": "education"
+    "icon": "education",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Дом Тейтеля: Горький, Гарин-Михайловский, Ульянов",
@@ -3953,7 +4017,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Некрасовская, 85 из OSM; Ginfo дает почти ту же координату 53.186974, 50.103485."
     ],
     "color": "darkpurple",
-    "icon": "book"
+    "icon": "book",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC%20%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9%2C%20%D0%9D%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2049.JPG?width=520",
+    "image_caption": "Некрасовская: контекст улицы"
 },
 {
     "name": "Покровский кафедральный собор",
@@ -3983,7 +4049,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по началу линии Пионерской, заданному для маршрута."
     ],
     "color": "lightred",
-    "icon": "flag"
+    "icon": "flag",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Дом Пономарева-Каткова / ДМШ N 12",
@@ -4012,7 +4080,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Пионерская, 5 из OSM."
     ],
     "color": "lightred",
-    "icon": "education"
+    "icon": "education",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Особняк Путилова / бывшее Дворянское собрание",
@@ -4089,7 +4159,9 @@ places = [
         "<b>Контекст:</b> Пионерская здесь становится улицей закрытых фасадов, ведомственных дворов и памяти о Куйбышеве как запасной столице."
     ],
     "color": "lightred",
-    "icon": "lock"
+    "icon": "lock",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Часовня Александра Невского и пожар ГУВД",
@@ -4102,7 +4174,9 @@ places = [
         "<b>Для маршрута:</b> это одна из самых тяжелых точек современной городской памяти на Пионерской."
     ],
     "color": "lightred",
-    "icon": "plus"
+    "icon": "plus",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Дом Линева-Розиной",
@@ -4146,7 +4220,9 @@ places = [
         "<b>Сегодня:</b> баня N 1 остается узнаваемым коммунально-бытовым адресом Самарского района."
     ],
     "color": "lightred",
-    "icon": "tint"
+    "icon": "tint",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Особняк Благовещенского / Борщова",
@@ -4159,7 +4235,9 @@ places = [
         "<b>Сегодня:</b> здание прошло реставрацию в 2022 г. и связано с медицинской функцией."
     ],
     "color": "lightred",
-    "icon": "heart"
+    "icon": "heart",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Перекресток Пионерской и Фрунзе",
@@ -4171,7 +4249,9 @@ places = [
         "<b>Для маршрута:</b> рядом баня N 1, ведомственные кварталы и дореволюционные угловые дома."
     ],
     "color": "lightred",
-    "icon": "road"
+    "icon": "road",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Деревянная Пионерская и Том Сойер Фест",
@@ -4184,7 +4264,9 @@ places = [
         "<b>Контекст:</b> рядом сохранялись деревянные дома N 76 и N 80."
     ],
     "color": "lightred",
-    "icon": "wrench"
+    "icon": "wrench",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Деревянные дома N 76 и N 80",
@@ -4197,7 +4279,9 @@ places = [
         "<b>Для прогулки:</b> это хороший участок для сравнения высоты, материала и плотности старой застройки."
     ],
     "color": "lightred",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Ночлежный дом Кирилова",
@@ -4243,7 +4327,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по ближайшему проверенному адресному центру Пионерская, 65 из OSM; сам дом утрачен, поэтому точного центра здания нет."
     ],
     "color": "lightred",
-    "icon": "remove"
+    "icon": "remove",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Перекресток Пионерской и Галактионовской",
@@ -4255,7 +4341,9 @@ places = [
         "<b>Для карты:</b> это удобный узел, где можно переходить между маршрутами без ощущения, что улицы изучаются отдельно друг от друга."
     ],
     "color": "lightred",
-    "icon": "transfer"
+    "icon": "transfer",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Верхний конец Пионерской у Самарской и Затонной",
@@ -4269,7 +4357,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по концу линии Пионерской, заданному для маршрута."
     ],
     "color": "lightred",
-    "icon": "map-marker"
+    "icon": "map-marker",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F6-065.JPG?width=520",
+    "image_caption": "Пионерская: контекст улицы"
 },
 {
     "name": "Нижнее начало Комсомольской у Волги",
@@ -4282,7 +4372,9 @@ places = [
         "<b>Для маршрута:</b> отсюда удобно начинать прогулку вверх от Волги к Успенской церкви, реальному училищу и деревянным кварталам."
     ],
     "color": "darkblue",
-    "icon": "flag"
+    "icon": "flag",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Склады купца Мешкова",
@@ -4296,7 +4388,9 @@ places = [
         "<b>Почему важно:</b> эта точка показывает Самару как портовый и хлебный город, где архитектура рождалась не из декора, а из оборота зерна, пристаней и железобетона."
     ],
     "color": "darkblue",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Место Успенской церкви",
@@ -4311,7 +4405,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресной привязке Комсомольская, 6."
     ],
     "color": "darkblue",
-    "icon": "plus"
+    "icon": "plus",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Детская художественная школа имени Петрова-Водкина",
@@ -4326,7 +4422,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресной привязке Комсомольская, 4а."
     ],
     "color": "darkblue",
-    "icon": "picture"
+    "icon": "picture",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Усадьба Шемякина",
@@ -4341,7 +4439,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресной привязке Комсомольская, 19."
     ],
     "color": "darkblue",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Первая женская гимназия",
@@ -4356,7 +4456,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресной привязке Комсомольская, 16."
     ],
     "color": "darkblue",
-    "icon": "education"
+    "icon": "education",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Самарское реальное училище",
@@ -4387,7 +4489,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресной привязке Комсомольская, 23."
     ],
     "color": "darkblue",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Усадьба купцов Дунаевых",
@@ -4402,7 +4506,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресной привязке Комсомольская, 26; соседний корпус 28 находится восточнее."
     ],
     "color": "darkblue",
-    "icon": "shopping-cart"
+    "icon": "shopping-cart",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Перекресток Комсомольской и Степана Разина",
@@ -4416,7 +4522,9 @@ places = [
         "<b>Для карты:</b> точка поставлена на узел у Комсомольской, 28, ближайший к пересечению со Степана Разина."
     ],
     "color": "darkblue",
-    "icon": "transfer"
+    "icon": "transfer",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Дом Прагера",
@@ -4431,7 +4539,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресной привязке Комсомольская, 34."
     ],
     "color": "darkblue",
-    "icon": "info-sign"
+    "icon": "info-sign",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Дом Любови Боянус",
@@ -4461,7 +4571,9 @@ places = [
         "<b>Для прогулки:</b> отсюда удобно сверять старые адреса: угловые дома часто имеют двойную нумерацию."
     ],
     "color": "darkblue",
-    "icon": "transfer"
+    "icon": "transfer",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Дом Вырыпаевых",
@@ -4508,7 +4620,9 @@ places = [
         "<b>Для карты:</b> это удобный переход между синим слоем Фрунзе и темно-синим слоем Комсомольской."
     ],
     "color": "darkblue",
-    "icon": "transfer"
+    "icon": "transfer",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Деревянная Комсомольская между Фрунзе и Чапаевской",
@@ -4522,7 +4636,9 @@ places = [
         "<b>Для прогулки:</b> смотреть надо медленно: важны наличники, карнизы, линии кровель и то, как дома стоят по красной линии улицы."
     ],
     "color": "darkblue",
-    "icon": "eye-open"
+    "icon": "eye-open",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Дом на Комсомольской, 62",
@@ -4552,7 +4668,9 @@ places = [
         "<b>Контекст:</b> здесь рядом деревянная застройка, поэтому перекресток важен не только геометрией, но и городской атмосферой."
     ],
     "color": "darkblue",
-    "icon": "transfer"
+    "icon": "transfer",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Дом на Комсомольской, 66",
@@ -4567,7 +4685,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресной привязке Комсомольская, 66."
     ],
     "color": "darkblue",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Комсомольская у бывшей Троицкой площади",
@@ -4580,7 +4700,9 @@ places = [
         "<b>Для карты:</b> точка помогает связать маршрут с уже пройденными слоями Ленинградской, Молодогвардейской и Чапаевской."
     ],
     "color": "darkblue",
-    "icon": "shopping-cart"
+    "icon": "shopping-cart",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Верхний конец Комсомольской у Молодогвардейской",
@@ -4593,7 +4715,9 @@ places = [
         "<b>Для следующего этапа:</b> отсюда удобно продолжать марафон по соседним улицам и проверять, как они сцепляются между собой."
     ],
     "color": "darkblue",
-    "icon": "map-marker"
+    "icon": "map-marker",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C_62.jpg?width=520",
+    "image_caption": "Комсомольская: контекст улицы"
 },
 {
     "name": "Дом П. Г. Новокрещенова",
@@ -4823,7 +4947,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру здания OSM."
     ],
     "color": "lightblue",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://sgpress.ru/wp-content/uploads/2026/05/ul_vodnikov_permyakov_1.jpg",
+    "image_caption": "Водников: контекст улицы"
 },
 {
     "name": "Усадьба Чубакова и Абрамова",
@@ -4867,7 +4993,7 @@ places = [
     ],
     "color": "lightblue",
     "icon": "home",
-    "image_url": "https://sgpress.ru/wp-content/uploads/2026/05/vodnikov_36_permyakov_1.jpg",
+    "image_url": "https://sgpress.ru/wp-content/uploads/2026/05/vodnikov_36_permyakov_1-kopiya.jpg",
     "image_caption": "Дом Самарцева"
 },
 {
@@ -4882,7 +5008,7 @@ places = [
     ],
     "color": "lightblue",
     "icon": "wrench",
-    "image_url": "https://sgpress.ru/wp-content/uploads/2026/05/vodnikov_40_permyakov_1.jpg",
+    "image_url": "https://sgpress.ru/wp-content/uploads/2026/05/vodnikov_40_permyakov.jpg",
     "image_caption": "Дом Рамзина"
 },
 {
@@ -4911,7 +5037,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Водников, 44 из OSM."
     ],
     "color": "lightblue",
-    "icon": "plus"
+    "icon": "plus",
+    "image_url": "https://sgpress.ru/wp-content/uploads/2026/05/ul_vodnikov_permyakov_1.jpg",
+    "image_caption": "Водников: контекст улицы"
 },
 {
     "name": "Мельница Стройкова и Якимова",
@@ -4940,7 +5068,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру здания OSM."
     ],
     "color": "lightblue",
-    "icon": "tree-deciduous"
+    "icon": "tree-deciduous",
+    "image_url": "https://sgpress.ru/wp-content/uploads/2026/05/ul_vodnikov_permyakov_1.jpg",
+    "image_caption": "Водников: контекст улицы"
 },
 {
     "name": "Общежитие Военно-медицинского института",
@@ -4953,7 +5083,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по ближайшему адресному центру Водников, 74 из OSM."
     ],
     "color": "lightblue",
-    "icon": "education"
+    "icon": "education",
+    "image_url": "https://sgpress.ru/wp-content/uploads/2026/05/ul_vodnikov_permyakov_1.jpg",
+    "image_caption": "Водников: контекст улицы"
 },
 {
     "name": "Дом купца Петра Вощакина",
@@ -4982,8 +5114,8 @@ places = [
     ],
     "color": "lightgreen",
     "icon": "flag",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Map_of_Samara_1890.jpg/800px-Map_of_Samara_1890.jpg",
-    "image_caption": "Исторический план Самары"
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Здание Самарского жандармского управления",
@@ -4997,7 +5129,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Садовая, 45 из OSM."
     ],
     "color": "lightgreen",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Самарская хоральная синагога",
@@ -5027,7 +5161,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по ближайшему проверенному адресному центру Садовая, 46 из OSM; сам исторический участок находится рядом."
     ],
     "color": "lightgreen",
-    "icon": "certificate"
+    "icon": "certificate",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Дом Болотникова",
@@ -5040,7 +5176,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Садовая, 61 из OSM."
     ],
     "color": "lightgreen",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Дом, где жил Валериан Куйбышев",
@@ -5053,7 +5191,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по ближайшим проверенным адресным центрам Садовая, 71 и 78 из OSM; точный адресный центр дома 72 в OSM не найден."
     ],
     "color": "lightgreen",
-    "icon": "user"
+    "icon": "user",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Епархиальное управление",
@@ -5065,7 +5205,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Садовая, 86 из OSM."
     ],
     "color": "lightgreen",
-    "icon": "book"
+    "icon": "book",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Деревянная Садовая: дома 105-109",
@@ -5078,7 +5220,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Садовая, 105 из OSM."
     ],
     "color": "lightgreen",
-    "icon": "tree-deciduous"
+    "icon": "tree-deciduous",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Дом на Садовой, 117",
@@ -5104,7 +5248,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по ближайшим проверенным адресным центрам Садовая, 125 и 126 из OSM; точный адресный центр дома 124 в OSM не найден."
     ],
     "color": "lightgreen",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Макаронная фабрика «Верола»",
@@ -5134,7 +5280,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по адресному центру Садовая, 143 из OSM; Ginfo дает близкую координату 53.1923, 50.1078."
     ],
     "color": "lightgreen",
-    "icon": "plane"
+    "icon": "plane",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Садовая, 154: место марксистского кружка",
@@ -5175,7 +5323,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по координате Ginfo: 53.1950, 50.1090."
     ],
     "color": "lightgreen",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Военно-медицинская академия РККА",
@@ -5188,7 +5338,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по координате Ginfo: 53.1986, 50.1115."
     ],
     "color": "lightgreen",
-    "icon": "plus"
+    "icon": "plus",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Театр-кинематограф «Фурор»",
@@ -5201,7 +5353,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по координате Ginfo: 53.1987, 50.1131."
     ],
     "color": "lightgreen",
-    "icon": "film"
+    "icon": "film",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Sadovaya%2049.jpg?width=520",
+    "image_caption": "Садовая: контекст улицы"
 },
 {
     "name": "Земский арестный дом",
@@ -5214,7 +5368,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 8."
     ],
     "color": "gray",
-    "icon": "lock"
+    "icon": "lock",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Комплекс трикотажной фабрики",
@@ -5227,7 +5383,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 15."
     ],
     "color": "gray",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Усадьба О. А. Полуэктова",
@@ -5241,7 +5399,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 16."
     ],
     "color": "gray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Доходный дом А. Ф. Нуйчева",
@@ -5272,7 +5432,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 20."
     ],
     "color": "gray",
-    "icon": "plus"
+    "icon": "plus",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Дом В. И. Прахова",
@@ -5286,7 +5448,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 22."
     ],
     "color": "gray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Дом Зайцевой и след семьи Машковых",
@@ -5299,7 +5463,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 24."
     ],
     "color": "gray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Дом Марфы Победоносцевой",
@@ -5314,7 +5480,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 44."
     ],
     "color": "gray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Дом Т. Кистеневой",
@@ -5327,7 +5495,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 48."
     ],
     "color": "gray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Дом купца И. А. Рытикова",
@@ -5356,7 +5526,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 142; точка включена как главный мемориальный узел Рабочей."
     ],
     "color": "gray",
-    "icon": "info-sign"
+    "icon": "info-sign",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Поздний верхний участок Рабочей",
@@ -5368,7 +5540,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Рабочая, 91."
     ],
     "color": "gray",
-    "icon": "map-marker"
+    "icon": "map-marker",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Стадион «Локомотив»",
@@ -5381,7 +5555,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресу Агибалова, 7А в открытых картографических справочниках; объект включен как финальный спортивный узел Рабочей."
     ],
     "color": "gray",
-    "icon": "flag"
+    "icon": "flag",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Особняк фон Вакано",
@@ -5395,7 +5571,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Шостаковича, 3."
     ],
     "color": "gray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Дом, где жил Дмитрий Шостакович",
@@ -5440,7 +5618,9 @@ places = [
         "<b>Для карты:</b> точка взята из уже проверенного слоя улицы Куйбышева и включена в Рабочую как бывший адресный участок."
     ],
     "color": "gray",
-    "icon": "flag"
+    "icon": "flag",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Рабочая: контекст улицы"
 },
 {
     "name": "Театр оперы и балета имени Д. Д. Шостаковича",
@@ -5469,7 +5649,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 69."
     ],
     "color": "lightgray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Дом С. Т. Максимова",
@@ -5482,7 +5664,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 72."
     ],
     "color": "lightgray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Шихобаловская народная больница",
@@ -5497,7 +5681,7 @@ places = [
     ],
     "color": "lightgray",
     "icon": "plus",
-    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/Шихобаловская-больница.jpg",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
     "image_caption": "Шихобаловская больница"
 },
 {
@@ -5528,7 +5712,7 @@ places = [
     ],
     "color": "lightgray",
     "icon": "home",
-    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/Дом-Маслова.jpg",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%94%D0%BE%D0%BC-%D0%9C%D0%B0%D1%81%D0%BB%D0%BE%D0%B2%D0%B0.jpg",
     "image_caption": "Дом Маслова"
 },
 {
@@ -5543,7 +5727,7 @@ places = [
     ],
     "color": "lightgray",
     "icon": "briefcase",
-    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/Дом-городского-головы-Сергея-Пермякова.jpg",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%94%D0%BE%D0%BC-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D1%8B-%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D1%8F-%D0%9F%D0%B5%D1%80%D0%BC%D1%8F%D0%BA%D0%BE%D0%B2%D0%B0.jpg",
     "image_caption": "Дом Сергея Пермякова"
 },
 {
@@ -5557,7 +5741,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 101."
     ],
     "color": "lightgray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Дом мещан Забродиных",
@@ -5571,7 +5757,7 @@ places = [
     ],
     "color": "lightgray",
     "icon": "home",
-    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/Дом-мещан-Забродиных.jpg",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%94%D0%BE%D0%BC-%D0%BC%D0%B5%D1%89%D0%B0%D0%BD-%D0%97%D0%B0%D0%B1%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D1%8B%D1%85.jpg",
     "image_caption": "Дом Забродиных"
 },
 {
@@ -5585,7 +5771,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 105."
     ],
     "color": "lightgray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Дом на усадьбе Ф. Д. Лесина",
@@ -5598,7 +5786,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 106."
     ],
     "color": "lightgray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Дом Урванцева и след семьи Ульяновых",
@@ -5611,7 +5801,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по уточненному адресу Ленинская, 122, координата проверена через Ginfo."
     ],
     "color": "lightgray",
-    "icon": "book"
+    "icon": "book",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Дом Филимонова",
@@ -5624,7 +5816,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 116."
     ],
     "color": "lightgray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Дом Петра Прончука",
@@ -5638,7 +5832,7 @@ places = [
     ],
     "color": "lightgray",
     "icon": "home",
-    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/Дом-Петра-Прончука.jpg",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%94%D0%BE%D0%BC-%D0%9F%D0%B5%D1%82%D1%80%D0%B0-%D0%9F%D1%80%D0%BE%D0%BD%D1%87%D1%83%D0%BA%D0%B0.jpg",
     "image_caption": "Дом Петра Прончука"
 },
 {
@@ -5670,7 +5864,7 @@ places = [
     ],
     "color": "lightgray",
     "icon": "info-sign",
-    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/Ленинский-мемориал.jpg",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB.jpg",
     "image_caption": "Ленинский мемориал"
 },
 {
@@ -5685,7 +5879,7 @@ places = [
     ],
     "color": "lightgray",
     "icon": "education",
-    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/Музей-имени-Алабина.jpg",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-%D0%90%D0%BB%D0%B0%D0%B1%D0%B8%D0%BD%D0%B0.jpg",
     "image_caption": "Музей имени Алабина"
 },
 {
@@ -5699,7 +5893,9 @@ places = [
         "<b>Для карты:</b> точка поставлена по центральному адресу группы - Ginfo Ленинская, 150."
     ],
     "color": "lightgray",
-    "icon": "th-large"
+    "icon": "th-large",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Памятный крест Крестовоздвиженского старообрядческого храма",
@@ -5712,7 +5908,7 @@ places = [
     ],
     "color": "lightgray",
     "icon": "plus",
-    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/Памятный-крест.jpg",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D1%80%D0%B5%D1%81%D1%82.jpg",
     "image_caption": "Памятный крест"
 },
 {
@@ -5726,7 +5922,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 159."
     ],
     "color": "lightgray",
-    "icon": "home"
+    "icon": "home",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Дом трамвайного парка",
@@ -5739,7 +5937,9 @@ places = [
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Ленинская, 179."
     ],
     "color": "lightgray",
-    "icon": "road"
+    "icon": "road",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2019/05/%D0%A8%D0%B8%D1%85%D0%BE%D0%B1%D0%B0%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+    "image_caption": "Ленинская: контекст улицы"
 },
 {
     "name": "Верхняя Ленинская у выхода к проспекту Ленина",
@@ -5770,7 +5970,7 @@ places = [
     "icon_color": "black",
     "icon": "briefcase",
     "street": "Красноармейская",
-    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Industry%20House%20Samara%202022%20by%20Dmitry%20Demin%2001.jpg?width=520",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/145%20Kuybisheva%20st%20Samara.JPG?width=520",
     "image_caption": "Дом промышленности"
 },
 {
@@ -5787,7 +5987,7 @@ places = [
     "icon_color": "black",
     "icon": "glass",
     "street": "Красноармейская",
-    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9A%D1%83%D1%85%D0%BC%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D1%84%D0%BE%D0%BD_%D0%92%D0%B0%D0%BA%D0%B0%D0%BD%D0%BE_%28%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B0%D1%80%D0%BC%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%2C_4%29.jpg?width=520",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B1%D0%B0%D1%80%D0%B0%20%D1%84%D0%BE%D0%BD%20%D0%92%D0%B0%D0%BA%D0%B0%D0%BD%D0%BE.jpg?width=520",
     "image_caption": "Кухмистерская фон Вакано"
 },
 {
@@ -5804,8 +6004,8 @@ places = [
     "icon_color": "black",
     "icon": "home",
     "street": "Красноармейская",
-    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krasnoarmeyskaya%20street%2013%2C%20Samara.jpg?width=520",
-    "image_caption": "Красноармейская, 13"
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krasnoarmeyskaya%2C%20Samara.jpg?width=520",
+    "image_caption": "Красноармейская: общий вид улицы"
 },
 {
     "name": "Особняк Александры Курлиной / Музей модерна",
@@ -5858,7 +6058,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "home",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krasnoarmeyskaya%2C%20Samara.jpg?width=520",
+    "image_caption": "Красноармейская: общий вид улицы"
 },
 {
     "name": "Пересечение с Молодогвардейской",
@@ -5872,7 +6074,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "resize-small",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B0%D1%80%D0%BC%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0.jpg?width=520",
+    "image_caption": "Красноармейская улица"
 },
 {
     "name": "Трамвайный узел у Галактионовской",
@@ -5887,7 +6091,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "road",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0.jpg?width=520",
+    "image_caption": "Алексеевская улица, исторический вид"
 },
 {
     "name": "Средний квартал бывшей Алексеевской",
@@ -5901,7 +6107,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "map-marker",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0.jpg?width=520",
+    "image_caption": "Алексеевская улица, исторический вид"
 },
 {
     "name": "Участок у Самарской улицы",
@@ -5915,7 +6123,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "resize-small",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krasnoarmeyskaya%2C%20Samara.jpg?width=520",
+    "image_caption": "Красноармейская: общий вид улицы"
 },
 {
     "name": "Участок у Садовой улицы",
@@ -5929,7 +6139,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "resize-small",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B0%D1%80%D0%BC%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0.jpg?width=520",
+    "image_caption": "Красноармейская улица"
 },
 {
     "name": "Доходный дом Михаила Челышева",
@@ -5980,7 +6192,7 @@ places = [
     "icon_color": "black",
     "icon": "plus",
     "street": "Красноармейская",
-    "image_url": "https://sgpress.ru/wp-content/uploads/2023/07/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B0%D1%80%D0%BC%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F.jpg",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9E%D1%84%D0%B8%D1%86%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D0%BE%D0%BC.jpg?width=520",
     "image_caption": "Район Ильинской площади"
 },
 {
@@ -5995,7 +6207,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "map-marker",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krasnoarmeyskaya%20117%20in%202014%20by%20Inst.jpg?width=520",
+    "image_caption": "Красноармейская, 117"
 },
 {
     "name": "Квартал между Ленинской и Братьев Коростелевых",
@@ -6009,7 +6223,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "resize-small",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krasnoarmeyskaya%2C%20Samara.jpg?width=520",
+    "image_caption": "Красноармейская: общий вид улицы"
 },
 {
     "name": "Участок к Арцыбушевской",
@@ -6023,7 +6239,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "road",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9E%D0%90%D0%9E%20%D0%93%D0%B8%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%D0%BD%D0%B5%D1%84%D1%82%D1%8C.JPG?width=520",
+    "image_caption": "ОАО «Гипровостокнефть»"
 },
 {
     "name": "Подход к железнодорожному вокзалу",
@@ -6037,7 +6255,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "road",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9E%D0%90%D0%9E%20%D0%93%D0%B8%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%D0%BD%D0%B5%D1%84%D1%82%D1%8C.JPG?width=520",
+    "image_caption": "Верхняя Красноармейская: район Гипровостокнефти"
 },
 {
     "name": "ТРК «Гудок»",
@@ -6052,7 +6272,9 @@ places = [
     "color": "white",
     "icon_color": "black",
     "icon": "shopping-cart",
-    "street": "Красноармейская"
+    "street": "Красноармейская",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krasnoarmeyskaya%20117%20in%202014%20by%20Inst.jpg?width=520",
+    "image_caption": "Верхняя Красноармейская у вокзального района"
 },
 {
     "name": "Торговый центр «Гудок» / верхняя точка маршрута",
@@ -6067,8 +6289,8 @@ places = [
     "icon_color": "black",
     "icon": "shopping-cart",
     "street": "Красноармейская",
-    "image_url": "https://sgpress.ru/wp-content/uploads/2023/07/%D0%93%D1%83%D0%B4%D0%BE%D0%BA.jpg",
-    "image_caption": "Район ТРК «Гудок»"
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krasnoarmeyskaya%2C%20Samara.jpg?width=520",
+    "image_caption": "Красноармейская у вокзального района"
 },
 {
     "name": "Нижняя Набережная и Щепновка",
@@ -6081,7 +6303,9 @@ places = [
     ],
     "color": "cadetblue",
     "icon": "flag",
-    "street": "Максима Горького"
+    "street": "Максима Горького",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara.%20Volga%20river%20P6190174%202350.jpg?width=520",
+    "image_caption": "Волга у Самары"
 },
 {
     "name": "Дом Матрены Кореневой",
@@ -6095,7 +6319,9 @@ places = [
     ],
     "color": "cadetblue",
     "icon": "home",
-    "street": "Максима Горького"
+    "street": "Максима Горького",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%20%D0%93%D0%BE%D1%80%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C%2029%20%282%29.jpg?width=520",
+    "image_caption": "Нижняя застройка улицы Максима Горького"
 },
 {
     "name": "Дом Неклютина",
@@ -6124,7 +6350,9 @@ places = [
     ],
     "color": "cadetblue",
     "icon": "cog",
-    "street": "Максима Горького"
+    "street": "Максима Горького",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9C%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0%20%D1%8F%D0%BA%D0%B8%D0%BC%D0%BE%D0%B2%D0%B0.jpg?width=520",
+    "image_caption": "Промышленная застройка волжского берега"
 },
 {
     "name": "Мельница Стройкова и Якимова",
@@ -6155,7 +6383,7 @@ places = [
     "color": "cadetblue",
     "icon": "plus",
     "street": "Максима Горького",
-    "image_url": "https://sobory.ru/pic/02500/02521_20151213_130719.jpg",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A7%D0%B0%D1%81%D0%BE%D0%B2%D0%BD%D1%8F%20%D0%A1%D0%B2%D1%8F%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D1%8F%20%D0%BD%D0%B0%20%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%BE%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B3%D0%B8.jpg?width=520",
     "image_caption": "Часовня святителя Алексия"
 },
 {
@@ -6169,7 +6397,9 @@ places = [
     ],
     "color": "cadetblue",
     "icon": "briefcase",
-    "street": "Максима Горького"
+    "street": "Максима Горького",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%20%D0%93%D0%BE%D1%80%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C%2065-67.jpg?width=520",
+    "image_caption": "Промышленный участок у Максима Горького, 65-67"
 },
 {
     "name": "Дом Мясниковых",
@@ -6183,7 +6413,9 @@ places = [
     ],
     "color": "cadetblue",
     "icon": "home",
-    "street": "Максима Горького"
+    "street": "Максима Горького",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%20%D0%93%D0%BE%D1%80%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C%2029%20%281%29.jpg?width=520",
+    "image_caption": "Старая жилая застройка улицы Максима Горького"
 },
 {
     "name": "Речной вокзал и гостиница «Россия»",
@@ -6263,7 +6495,9 @@ places = [
     ],
     "color": "cadetblue",
     "icon": "picture",
-    "street": "Максима Горького"
+    "street": "Максима Горького",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ilya%20Repin%20-%20Barge%20Haulers%20on%20the%20Volga%20-%20Google%20Art%20Project%20%28cropped%29.jpg?width=520",
+    "image_caption": "Картина Репина, к которой отсылает композиция"
 },
 {
     "name": "Памятник товарищу Сухову",
@@ -6340,7 +6574,9 @@ places = [
     ],
     "color": "cadetblue",
     "icon": "cog",
-    "street": "Максима Горького"
+    "street": "Максима Горького",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20fontan%20volga.jpg?width=520",
+    "image_caption": "Набережная Волги у верхнего участка улицы"
 },
 {
     "name": "Первая очередь набережной у Красноармейского спуска",
