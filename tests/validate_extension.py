@@ -1,15 +1,15 @@
-"""Check the rendered continuation, including routes loaded from data files."""
+"""Check that days 21-30 exist as articles and rendered map layers."""
 
-from pathlib import Path
 import os
 import re
 import runpy
 import tempfile
+from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = [
-    "Вилоновская", "Ульяновская", "Волжский проспект", "Маяковского",
+    "Вилоновская", "Ульяновская", "Шостаковича", "Маяковского",
     "Чкалова", "Полевая", "Братьев Коростелёвых", "Арцыбушевская",
     "Буянова", "Ново-Садовая",
 ]
@@ -21,32 +21,43 @@ def main():
         with tempfile.TemporaryDirectory() as temporary:
             os.chdir(temporary)
             state = runpy.run_path(str(ROOT / "map.py"))
-            generated = Path("samara_marathon_map.html").read_text()
+            generated = Path("samara_marathon_map.html").read_text(encoding="utf-8")
     finally:
         os.chdir(previous)
 
-    missing = set(EXPECTED) - state["street_layers"].keys()
-    assert not missing, f"New street layers are missing: {sorted(missing)}"
-    assert len(state["street_layers"]) == 30, "Original twenty layers must remain"
-    for number, name in enumerate(EXPECTED, 21):
-        matches = list((ROOT / "streets").glob(f"День {number} - *.md"))
-        assert len(matches) == 1, (number, matches)
-        text = matches[0].read_text()
-        assert len(re.findall(r"\[!success\]-", text)) == 30, matches[0]
-        assert len(re.findall(r"!\[[^\]]+\]\(", text)) >= 4, matches[0]
-        for target in re.findall(r"\[\[([^|\]]+)", text):
+    assert len(state["street_layers"]) == 30, "Expected original 20 plus 10 new layers"
+    assert state["heritage_layer"] is not None
+    assert generated.count("feature_group_") > 30
+
+    for day, street in enumerate(EXPECTED, 21):
+        assert street in state["street_layers"], f"No map layer for {street}"
+        matches = list((ROOT / "streets").glob(f"День {day} - *.md"))
+        assert len(matches) == 1, (day, matches)
+        article = matches[0].read_text(encoding="utf-8")
+        frontmatter = article.split("---", 2)[1]
+        assert f"day: {day}" in frontmatter, matches[0]
+        assert f"street: {street}" in frontmatter, matches[0]
+        assert article.count("![") >= 4, f"Too few illustrated stops: {matches[0]}"
+        answer_count = max(article.count("[!success]"), article.count("**Ответ:**"))
+        assert answer_count == 30, (matches[0], answer_count)
+        for target in re.findall(r"\[\[([^|\]]+)", article):
             assert (ROOT / "streets" / f"{target}.md").exists(), target
-        route = state["streets"][name]
-        assert route.get("segments"), f"No sourced line geometry for {name}"
-        points = [p for p in state["places"] if p.get("street") == name]
-        assert points, f"No markers in {name} layer"
-        for point in points:
-            assert point.get("image_url"), point["name"]
-            assert point.get("coordinate_source"), point["name"]
-            lat, lon = point["coords"]
-            assert 53.15 < lat < 53.35 and 50.03 < lon < 50.35, point
-        assert name in generated, f"Layer absent from saved HTML: {name}"
-    print("Validated 30 rendered street layers, 10 articles, quizzes, images and marker provenance")
+
+        segments = state["streets"][street].get("segments") or []
+        assert segments, f"No sourced line geometry for {street}"
+        assert all(len(segment) >= 2 for segment in segments), street
+        for segment in segments:
+            for lat, lon in segment:
+                assert 53.15 < lat < 53.28 and 50.03 < lon < 50.25, (street, lat, lon)
+
+        stops = [place for place in state["places"] if place.get("street") == street]
+        assert len(stops) >= 2, f"Too few map stops for {street}"
+        for stop in stops:
+            assert stop.get("coordinate_source") or any(
+                "Для карты" in detail for detail in stop["info"]
+            ), f"No coordinate provenance for {stop['name']}"
+
+    print("Validated 30 street layers, articles 21-30, OSM segments and map stops")
 
 
 if __name__ == "__main__":

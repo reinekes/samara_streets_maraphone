@@ -4,14 +4,21 @@ import re
 from pathlib import Path
 
 import folium
-from branca.element import MacroElement
+from branca.element import Element, MacroElement
 from jinja2 import Template
 
 ROOT_DIR = Path(__file__).resolve().parent
 HERITAGE_GEOJSON = ROOT_DIR / "data" / "heritage_objects.geojson"
+EXTENSION_ROUTES = ROOT_DIR / "data" / "extension_routes.geojson"
 
 # Базовая карта (сцентрована на историческую Самару)
 samara_map = folium.Map(location=[53.1895, 50.0900], zoom_start=15)
+samara_map.get_root().header.add_child(Element(
+    "<style>.leaflet-control-layers-expanded {"
+    "max-height: min(75vh, 650px); overflow-y: auto; "
+    "max-width: min(300px, calc(100vw - 20px));"
+    "}</style>"
+))
 
 # ==========================================
 # 1. ДАННЫЕ МАРШРУТОВ (Линии улиц)
@@ -526,6 +533,39 @@ streets = {
 },
 
 }
+
+
+def load_extension_routes(path=EXTENSION_ROUTES):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    routes = {}
+    for feature in data["features"]:
+        name = feature["properties"]["street"]
+        if feature["geometry"]["type"] != "LineString":
+            continue
+        segment = [[lat, lon] for lon, lat in feature["geometry"]["coordinates"]]
+        routes.setdefault(name, []).append(segment)
+    return routes
+
+
+extension_colors = {
+    "Вилоновская": "#0277bd",
+    "Ульяновская": "#7b1fa2",
+    "Шостаковича": "#ad1457",
+    "Маяковского": "#2e7d32",
+    "Чкалова": "#e65100",
+    "Полевая": "#00838f",
+    "Братьев Коростелёвых": "#6d4c41",
+    "Арцыбушевская": "#c62828",
+    "Буянова": "#5e35b1",
+    "Ново-Садовая": "#455a64",
+}
+
+for street_name, segments in load_extension_routes().items():
+    streets[street_name] = {
+        "segments": segments,
+        "highlight_weight": 10,
+        "color": extension_colors[street_name],
+    }
 
  
 # ==========================================
@@ -5570,10 +5610,11 @@ places = [
         "<b>Факты:</b> биография владельца спорная; чаще всего объект связывают с Владимиром фон Вакано и событиями Первой мировой войны.",
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Шостаковича, 3."
     ],
-    "color": "gray",
+    "color": "darkred",
     "icon": "home",
-    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
-    "image_caption": "Рабочая: контекст улицы"
+    "street": "Шостаковича",
+    "image_url": "https://drugoigorod.ru/wp-content/uploads/2021/12/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F-3-%D0%B2-%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B5.jpg",
+    "image_caption": "Особняк фон Вакано"
 },
 {
     "name": "Дом, где жил Дмитрий Шостакович",
@@ -5585,8 +5626,9 @@ places = [
         "<b>Факты:</b> 27 декабря 1941 г. Шостакович завершил в Куйбышеве Седьмую симфонию; премьера прошла 5 марта 1942 г. в ДК имени Куйбышева.",
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Шостаковича, 5."
     ],
-    "color": "gray",
+    "color": "darkred",
     "icon": "music",
+    "street": "Шостаковича",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Frunze%20146.jpg?width=520",
     "image_caption": "Дом Шостаковича"
 },
@@ -5601,8 +5643,9 @@ places = [
         "<b>Факты:</b> здание соединяло военную, клубную, концертную и идеологическую функции; это один из главных советских акцентов у площади Чапаева и площади Куйбышева.",
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo Шостаковича, 7."
     ],
-    "color": "gray",
+    "color": "darkred",
     "icon": "flag",
+    "street": "Шостаковича",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A8%D0%BE%D1%81%D1%82%D0%B0%D0%BA%D0%BE%D0%B2%D0%B8%D1%87%D0%B0%2C%207%20%282%29.jpg?width=520",
     "image_caption": "Гарнизонный Дом офицеров"
 },
@@ -5617,10 +5660,11 @@ places = [
         "<b>Факты:</b> до революции здесь проходили балы, лекции и общественные вечера; после 1917 г. здание стало частью военного слоя Самары.",
         "<b>Для карты:</b> точка взята из уже проверенного слоя улицы Куйбышева и включена в Рабочую как бывший адресный участок."
     ],
-    "color": "gray",
+    "color": "darkred",
     "icon": "flag",
-    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%BC_%D0%A0%D1%8B%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.jpg?width=520",
-    "image_caption": "Рабочая: контекст улицы"
+    "street": "Шостаковича",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museum_of_war_history%2C_Samara.jpg?width=520",
+    "image_caption": "Бывшее Общественное собрание"
 },
 {
     "name": "Театр оперы и балета имени Д. Д. Шостаковича",
@@ -5633,8 +5677,9 @@ places = [
         "<b>Факты:</b> здесь 5 марта 1942 г. состоялась официальная премьера Седьмой симфонии Шостаковича; площадь Куйбышева связана с парадом 7 ноября 1941 г.",
         "<b>Для карты:</b> координата проверена по адресной точке Ginfo площадь Куйбышева, 1."
     ],
-    "color": "gray",
+    "color": "darkred",
     "icon": "music",
+    "street": "Шостаковича",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20opera.jpg?width=520",
     "image_caption": "Самарский театр оперы и балета"
 },
@@ -6722,6 +6767,80 @@ def build_heritage_popup_html(heritage_object):
     )
 
 
+# Representative stops for the ten continuation days. Their coordinates come
+# from the same heritage GeoJSON as the independent protection-status layer.
+extension_heritage_stops = {
+    "Вилоновская": [9390080, 9386473, 9389932, 9389897],
+    "Ульяновская": [9389892, 9389906, 9386570, 9386476],
+    "Маяковского": [9386461, 9404046],
+    "Чкалова": [9386470, 9389894, 9386454],
+    "Братьев Коростелёвых": [9403283, 9389881, 9389891],
+    "Арцыбушевская": [9386451, 9386452, 9386441, 9386442],
+    "Буянова": [9403964, 9386449, 9389898, 9390061, 9386639],
+    "Ново-Садовая": [9383820, 9390007, 9403277],
+}
+extension_marker_colors = {
+    "Вилоновская": "blue",
+    "Ульяновская": "purple",
+    "Маяковского": "green",
+    "Чкалова": "orange",
+    "Братьев Коростелёвых": "beige",
+    "Арцыбушевская": "red",
+    "Буянова": "darkpurple",
+    "Ново-Садовая": "gray",
+}
+
+heritage_by_id = {item["id"]: item for item in load_heritage_objects()}
+for street_name, object_ids in extension_heritage_stops.items():
+    for object_id in object_ids:
+        item = heritage_by_id[object_id]
+        details = [
+            f"<b>Адрес:</b> {html_lib.escape(item['address'])}",
+            "<b>Статус:</b> объект из реестрового слоя культурного наследия.",
+            f"<b>Координата:</b> GeoJSON, объект {object_id}.",
+        ]
+        if item["created"]:
+            details.insert(1, f"<b>Время создания:</b> {html_lib.escape(item['created'])}")
+        places.append({
+            "name": item["name"],
+            "coords": item["coords"],
+            "info": details,
+            "color": extension_marker_colors[street_name],
+            "icon": "map-marker",
+            "street": street_name,
+            "coordinate_source": f"heritage GeoJSON feature {object_id}",
+        })
+
+places.extend([
+    {
+        "name": "Зональный вычислительный центр",
+        "coords": [53.2074641, 50.1189879],
+        "info": ["<b>Адрес:</b> Полевая, 5", "<b>Дата:</b> 1981 г.",
+                 "<b>Факт:</b> здание прозвали «летающей тарелкой»; здесь работал вычислительный центр энергосистем Поволжья."],
+        "street": "Полевая", "color": "cadetblue", "icon": "cog",
+        "coordinate_source": "OpenStreetMap Nominatim address Полевая, 5",
+        "image_url": "https://drugoigorod.ru/wp-content/uploads/2020/05/%D0%9B%D0%B5%D1%82%D0%B0%D1%8E%D1%89%D0%B0%D1%8F-%D1%82%D0%B0%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%9F%D0%BE%D0%BB%D0%B5%D0%B2%D0%BE%D0%B9.jpg",
+        "image_caption": "Зональный вычислительный центр на Полевой",
+    },
+    {
+        "name": "Пироговская больница",
+        "coords": [53.2020315, 50.1290484],
+        "info": ["<b>Адрес:</b> Полевая, 80а", "<b>История:</b> земская больница размещается здесь с 1875 г.; в 1886 г. при ней открыли пастеровскую станцию."],
+        "street": "Полевая", "color": "cadetblue", "icon": "plus-sign",
+        "coordinate_source": "OpenStreetMap Nominatim address Полевая, 80а",
+    },
+    {
+        "name": "Дом работников трамвайного управления",
+        "coords": [53.2005972, 50.1301291],
+        "info": ["<b>Адрес:</b> Полевая, 88", "<b>Факт:</b> части с квадратными и полукруглыми балконами относятся к разным строительным очередям; завершение относится к 1953 г."],
+        "street": "Полевая", "color": "cadetblue", "icon": "home",
+        "coordinate_source": "OpenStreetMap Nominatim address Полевая, 88",
+        "image_url": "https://drugoigorod.ru/wp-content/uploads/2020/05/%D0%96%D0%B8%D0%BB%D0%BE%D0%B9-%D0%B4%D0%BE%D0%BC-%D0%A2%D0%A2%D0%A3.jpg",
+        "image_caption": "Дом трамвайщиков",
+    },
+])
+
+
 # ==========================================
 # 3. ОТРИСОВКА КАРТЫ С ПЕРЕКЛЮЧАТЕЛЯМИ УЛИЦ
 # ==========================================
@@ -6859,27 +6978,30 @@ for street_name, data in streets.items():
 
     layer = street_layers[street_name]
 
-    if not data.get("coords"):
+    segments = data.get("segments") or [data.get("coords", [])]
+    if not any(segments):
         continue
 
-    # Полупрозрачная подложка / коридор
-    if data.get("highlight_weight", 0) > 1:
+    for segment in segments:
+        if len(segment) < 2:
+            continue
+
+        if data.get("highlight_weight", 0) > 1:
+            folium.PolyLine(
+                locations=segment,
+                color=data["color"],
+                weight=data["highlight_weight"],
+                opacity=0.18,
+                tooltip=f"Улица {street_name}"
+            ).add_to(layer)
+
         folium.PolyLine(
-            locations=data["coords"],
+            locations=segment,
             color=data["color"],
-            weight=data["highlight_weight"],
-            opacity=0.18,
+            weight=6,
+            opacity=0.8,
             tooltip=f"Улица {street_name}"
         ).add_to(layer)
-
-    # Основная линия
-    folium.PolyLine(
-        locations=data["coords"],
-        color=data["color"],
-        weight=6,
-        opacity=0.8,
-        tooltip=f"Улица {street_name}"
-    ).add_to(layer)
 
 
 # ------------------------------------------
