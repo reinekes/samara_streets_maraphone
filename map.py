@@ -10,6 +10,7 @@ from jinja2 import Template
 ROOT_DIR = Path(__file__).resolve().parent
 HERITAGE_GEOJSON = ROOT_DIR / "data" / "heritage_objects.geojson"
 EXTENSION_ROUTES = ROOT_DIR / "data" / "extension_routes.geojson"
+EXTENSION_ADDRESSES = ROOT_DIR / "data" / "extension_addresses.geojson"
 
 # Базовая карта (сцентрована на историческую Самару)
 samara_map = folium.Map(location=[53.1895, 50.0900], zoom_start=15)
@@ -566,6 +567,24 @@ for street_name, segments in load_extension_routes().items():
         "highlight_weight": 10,
         "color": extension_colors[street_name],
     }
+
+# One legible walking route replaces the fragmented two-way carriageways and
+# distant highway pieces in the source snapshot. Waypoints lie on OSM ways.
+streets["Ново-Садовая"]["segments"] = [[
+    [53.2082713, 50.1308593],
+    [53.2093112, 50.1333390],
+    [53.2117005, 50.1384335],
+    [53.2133446, 50.1422433],
+    [53.2143786, 50.1445360],
+    [53.2166152, 50.1488415],
+    [53.2199496, 50.1570779],
+    [53.2197325, 50.1618823],
+    [53.2239672, 50.1704439],
+    [53.2264145, 50.1727396],
+    [53.2283242, 50.1755865],
+]]
+streets["Ново-Садовая"]["highlight_weight"] = 5
+streets["Ново-Садовая"]["color"] = "#397257"
 
  
 # ==========================================
@@ -6770,25 +6789,82 @@ def build_heritage_popup_html(heritage_object):
 # Representative stops for the ten continuation days. Their coordinates come
 # from the same heritage GeoJSON as the independent protection-status layer.
 extension_heritage_stops = {
-    "Вилоновская": [9390080, 9386473, 9389932, 9389897],
-    "Ульяновская": [9389892, 9389906, 9386570, 9386476],
+    "Вилоновская": [9390080, 9386473, 9386544, 9389937, 9389932, 9389897],
+    "Ульяновская": [9389892, 9390006, 9389941, 9389906, 9386570, 9386476],
     "Маяковского": [9386461, 9404046],
-    "Чкалова": [9386470, 9389894, 9386454],
-    "Братьев Коростелёвых": [9403283, 9389881, 9389891],
-    "Арцыбушевская": [9386451, 9386452, 9386441, 9386442],
-    "Буянова": [9403964, 9386449, 9389898, 9390061, 9386639],
+    "Чкалова": [9404062, 9386454, 9389894, 9386470],
+    "Братьев Коростелёвых": [9403283, 9389881, 9389926, 9389891, 9390046],
+    "Арцыбушевская": [9461873, 9386553, 9389896, 9386451, 9386452,
+                       9389923, 9386453, 9386441, 9390060, 9386638, 9386442],
+    "Буянова": [9403964, 9386654, 9386449, 9389898, 9390061, 9386639],
     "Ново-Садовая": [9383820, 9390007, 9403277],
+}
+extension_days = {
+    "Вилоновская": 21, "Ульяновская": 22, "Шостаковича": 23,
+    "Маяковского": 24, "Чкалова": 25, "Полевая": 26,
+    "Братьев Коростелёвых": 27, "Арцыбушевская": 28,
+    "Буянова": 29, "Ново-Садовая": 30,
+}
+heritage_article_sections = {
+    "Вилоновская": {9390080: 1, 9386473: 3, 9386544: 4,
+                    9389937: 6, 9389932: 7, 9389897: 8},
+    "Ульяновская": {9389892: 3, 9390006: 4, 9389941: 5,
+                    9389906: 7, 9386570: 8, 9386476: 10},
+    "Маяковского": {9404046: 7, 9386461: 9},
+    "Чкалова": {9404062: 2, 9386454: 4, 9389894: 5, 9386470: 9},
+    "Братьев Коростелёвых": {9389926: 6, 9389891: 7, 9390046: 8},
+    "Арцыбушевская": {9461873: 1, 9386553: 2, 9389896: 3,
+                      9386451: 5, 9386452: 6, 9389923: 7, 9386453: 8,
+                      9386441: 9, 9390060: 9, 9386638: 10},
+    "Буянова": {9403964: 1, 9386654: 2, 9386449: 4,
+                9389898: 5, 9390061: 5, 9386639: 8},
+    "Ново-Садовая": {9383820: 8, 9390007: 9},
 }
 extension_marker_colors = {
     "Вилоновская": "blue",
     "Ульяновская": "purple",
     "Маяковского": "green",
     "Чкалова": "orange",
+    "Полевая": "cadetblue",
     "Братьев Коростелёвых": "beige",
     "Арцыбушевская": "red",
     "Буянова": "darkpurple",
     "Ново-Садовая": "gray",
 }
+
+
+def article_stop(street, section_number, image_index=0):
+    article = next((ROOT_DIR / "streets").glob(
+        f"День {extension_days[street]} - *.md"
+    )).read_text(encoding="utf-8")
+    match = re.search(rf"(?m)^#{{2,3}} {section_number}\. (.+)$", article)
+    if not match:
+        raise ValueError(f"Missing article section {street}: {section_number}")
+    end = re.search(r"(?m)^#{1,3} ", article[match.end():])
+    body = article[match.end():match.end() + end.start() if end else None]
+    images = re.findall(r"!\[([^]]*)\]\((https?://[^)]+)\)", body)
+    paragraphs = [part.strip() for part in body.split("\n\n")
+                  if part.strip() and not part.lstrip().startswith(("![", "*"))]
+    summary = paragraphs[0].split("\n")[0] if paragraphs else ""
+    summary = re.sub(r"\[([^]]+)\]\(https?://[^)]+\)", r"\1", summary)
+    summary = re.sub(r"\[\[([^]|]+)\|([^]]+)\]\]", r"\2", summary)
+    summary = summary.replace("**", "")
+    return {
+        "title": match.group(1),
+        "summary": summary[:350],
+        "image": images[image_index] if len(images) > image_index else None,
+    }
+
+
+def add_article_details(place, street, section_number, image_index=0):
+    section = article_stop(street, section_number, image_index)
+    if section["summary"]:
+        place["info"].append(
+            f"<b>Из маршрута:</b> {html_lib.escape(section['summary'])}"
+        )
+    if section["image"]:
+        place["image_caption"], place["image_url"] = section["image"]
+    return place
 
 heritage_by_id = {item["id"]: item for item in load_heritage_objects()}
 for street_name, object_ids in extension_heritage_stops.items():
@@ -6801,7 +6877,7 @@ for street_name, object_ids in extension_heritage_stops.items():
         ]
         if item["created"]:
             details.insert(1, f"<b>Время создания:</b> {html_lib.escape(item['created'])}")
-        places.append({
+        place = {
             "name": item["name"],
             "coords": item["coords"],
             "info": details,
@@ -6809,7 +6885,72 @@ for street_name, object_ids in extension_heritage_stops.items():
             "icon": "map-marker",
             "street": street_name,
             "coordinate_source": f"heritage GeoJSON feature {object_id}",
-        })
+        }
+        section_number = heritage_article_sections.get(street_name, {}).get(object_id)
+        # These shared sections illustrate the neighboring building instead.
+        photo_index = 99 if object_id in {9386441, 9389898} else 0
+        places.append(add_article_details(place, street_name, section_number, photo_index)
+                      if section_number else place)
+
+
+address_article_sections = {
+    ("Вилоновская", "106"): (9, 0),
+    ("Ульяновская", "1"): (2, 0),
+    ("Ульяновская", "18"): (6, 0),
+    ("Маяковского", "15"): (3, 0),
+    ("Маяковского", "32"): (6, 0),
+    ("Маяковского", "37"): (8, 0),
+    ("Чкалова", "84"): (3, 0),
+    ("Чкалова", "91"): (7, 0),
+    ("Чкалова", "98"): (8, 0),
+    ("Полевая", "43"): (4, 0),
+    ("Братьев Коростелёвых", "17"): (1, 0),
+    ("Братьев Коростелёвых", "47"): (3, 0),
+    ("Ново-Садовая", "3"): (2, 0),
+    ("Ново-Садовая", "22"): (4, 0),
+    ("Ново-Садовая", "30"): (4, 99),
+    ("Ново-Садовая", "42"): (4, 1),
+}
+
+for feature in json.loads(EXTENSION_ADDRESSES.read_text(encoding="utf-8"))["features"]:
+    street_name = feature["properties"]["street"]
+    number = feature["properties"]["number"]
+    section = address_article_sections.get((street_name, number))
+    if not section:
+        continue
+    lon, lat = feature["geometry"]["coordinates"]
+    article = article_stop(street_name, section[0], section[1])
+    place = {
+        "name": article["title"],
+        "coords": [lat, lon],
+        "info": [f"<b>Адрес:</b> {html_lib.escape(street_name)}, {number}"],
+        "color": extension_marker_colors[street_name],
+        "icon": "map-marker",
+        "street": street_name,
+        "coordinate_source": (
+            f"OSM {feature['properties']['osm_type']}/"
+            f"{feature['properties']['osm_id']} via Nominatim"
+        ),
+    }
+    places.append(add_article_details(place, street_name, *section))
+
+
+for street_name, name, coords, section, source in [
+    ("Маяковского", "Храм Георгия Победоносца", [53.2047266, 50.1117194], 2,
+     "OSM Nominatim place_of_worship"),
+    ("Полевая", "Фонтан «Древо жизни»", [53.2064200, 50.1227871], 5,
+     "OSM Nominatim amenity=fountain"),
+    ("Ново-Садовая", "Загородный парк", [53.2305006, 50.1637819], 10,
+     "OSM Nominatim leisure=park; area center"),
+]:
+    place = {
+        "name": name, "coords": coords,
+        "info": ["<b>Ориентир:</b> отдельная остановка маршрута."],
+        "color": extension_marker_colors[street_name],
+        "icon": "map-marker", "street": street_name,
+        "coordinate_source": source,
+    }
+    places.append(add_article_details(place, street_name, section))
 
 places.extend([
     {

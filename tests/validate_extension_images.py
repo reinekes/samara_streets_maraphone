@@ -1,6 +1,9 @@
 """Live-check embedded images in marathon articles 21-30."""
 
 import re
+import os
+import runpy
+import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -29,6 +32,17 @@ def main():
         for url in re.findall(r"!\[[^\]]*\]\((https?://[^)]+)\)", article.read_text()):
             urls.setdefault(url, []).append(day)
 
+    previous = Path.cwd()
+    try:
+        with tempfile.TemporaryDirectory() as temporary:
+            os.chdir(temporary)
+            state = runpy.run_path(str(ROOT / "map.py"))
+    finally:
+        os.chdir(previous)
+    for place in state["places"]:
+        if place.get("street") in state["extension_days"] and place.get("image_url"):
+            urls.setdefault(place["image_url"], []).append(place["street"])
+
     failures = []
     with ThreadPoolExecutor(max_workers=4) as executor:
         tasks = {executor.submit(check, url): url for url in urls}
@@ -37,7 +51,7 @@ def main():
             if failure:
                 failures.append(failure)
 
-    print(f"Checked {len(urls)} distinct image URLs in days 21-30")
+    print(f"Checked {len(urls)} distinct image URLs in articles and map stops, days 21-30")
     if failures:
         print("\n".join(failures))
         raise SystemExit(f"{len(failures)} image URLs failed")

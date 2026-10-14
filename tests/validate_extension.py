@@ -51,11 +51,19 @@ def main():
                 assert 53.15 < lat < 53.28 and 50.03 < lon < 50.25, (street, lat, lon)
 
         stops = [place for place in state["places"] if place.get("street") == street]
-        assert len(stops) >= 2, f"Too few map stops for {street}"
+        assert len(stops) >= 5, f"Too few map stops for {street}"
+        assert sum(bool(stop.get("image_url")) for stop in stops) >= 3, (
+            f"Too few illustrated map stops for {street}"
+        )
         for stop in stops:
             assert stop.get("coordinate_source") or any(
                 "Для карты" in detail for detail in stop["info"]
             ), f"No coordinate provenance for {stop['name']}"
+
+    novo_sadovaya = state["streets"]["Ново-Садовая"]
+    assert len(novo_sadovaya["segments"]) == 1
+    assert len(novo_sadovaya["segments"][0]) <= 15
+    assert novo_sadovaya["highlight_weight"] <= 5
 
     print("Validated 30 street layers, articles 21-30, OSM segments and map stops")
 

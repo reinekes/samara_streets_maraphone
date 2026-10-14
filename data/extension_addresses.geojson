@@ -1,0 +1,347 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Вилоновская",
+        "number": "106",
+        "display_name": "106, Вилоновская улица, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 411628856,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1190468,
+          53.193901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ульяновская",
+        "number": "1",
+        "display_name": "1, Ульяновская улица, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 762811956,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1010709,
+          53.2012351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ульяновская",
+        "number": "18",
+        "display_name": "ТОЦ Вавилон, 18, Ульяновская улица, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443001, Россия",
+        "osm_type": "way",
+        "osm_id": 255029910,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1104928,
+          53.1989469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Маяковского",
+        "number": "15",
+        "display_name": "15, улица Маяковского, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 374253711,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1146843,
+          53.2032826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Маяковского",
+        "number": "32",
+        "display_name": "32, улица Маяковского, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 65050707,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1177265,
+          53.2016163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Маяковского",
+        "number": "37",
+        "display_name": "37, улица Маяковского, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 65050777,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1182257,
+          53.200643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Маяковского",
+        "number": "42",
+        "display_name": "42, улица Маяковского, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 388369670,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1187292,
+          53.2008066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Чкалова",
+        "number": "84",
+        "display_name": "84, улица Чкалова, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443001, Россия",
+        "osm_type": "way",
+        "osm_id": 52009934,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1244852,
+          53.2004357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Чкалова",
+        "number": "91",
+        "display_name": "Ремонтная мастерская ТД 1;Тяговая подстанция №9, 91, улица Чкалова, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443030, Россия",
+        "osm_type": "way",
+        "osm_id": 43856565,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1258361,
+          53.1980858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Чкалова",
+        "number": "98",
+        "display_name": "98, улица Чкалова, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443030, Россия",
+        "osm_type": "way",
+        "osm_id": 51755493,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1271303,
+          53.1983178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Полевая",
+        "number": "43",
+        "display_name": "43, Полевая улица, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 43856598,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1241243,
+          53.2041906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Полевая",
+        "number": "50",
+        "display_name": "50, Полевая улица, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 380709171,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1212284,
+          53.2080516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Братьев Коростелёвых",
+        "number": "17",
+        "display_name": "17, улица Братьев Коростелёвых, Железнодорожный район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 50344167,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1086787,
+          53.1855993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Братьев Коростелёвых",
+        "number": "47",
+        "display_name": "47, улица Братьев Коростелёвых, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 58113651,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.111265,
+          53.189735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Братьев Коростелёвых",
+        "number": "146",
+        "display_name": "146, улица Братьев Коростелёвых, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 78424323,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1140788,
+          53.1947428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ново-Садовая",
+        "number": "3",
+        "display_name": "3, Ново-Садовая улица, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 45515722,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1266837,
+          53.2056645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ново-Садовая",
+        "number": "22",
+        "display_name": "22, Ново-Садовая улица, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443110, Россия",
+        "osm_type": "way",
+        "osm_id": 41690140,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1345263,
+          53.2100737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ново-Садовая",
+        "number": "30",
+        "display_name": "30, Ново-Садовая улица, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443110, Россия",
+        "osm_type": "way",
+        "osm_id": 41690153,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1345658,
+          53.2137416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ново-Садовая",
+        "number": "42",
+        "display_name": "42, Ново-Садовая улица, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443110, Россия",
+        "osm_type": "way",
+        "osm_id": 41690167,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1383446,
+          53.2140738
+        ]
+      }
+    }
+  ]
+}
