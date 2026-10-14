@@ -6844,14 +6844,19 @@ def article_stop(street, section_number, image_index=0):
     body = article[match.end():match.end() + end.start() if end else None]
     images = re.findall(r"!\[([^]]*)\]\((https?://[^)]+)\)", body)
     paragraphs = [part.strip() for part in body.split("\n\n")
-                  if part.strip() and not part.lstrip().startswith(("![", "*"))]
+                  if part.strip() and not part.lstrip().startswith("![")
+                  and not (part.lstrip().startswith("*")
+                           and not part.lstrip().startswith("**"))]
     summary = paragraphs[0].split("\n")[0] if paragraphs else ""
     summary = re.sub(r"\[([^]]+)\]\(https?://[^)]+\)", r"\1", summary)
     summary = re.sub(r"\[\[([^]|]+)\|([^]]+)\]\]", r"\2", summary)
     summary = summary.replace("**", "")
+    if len(summary) > 300:
+        sentence_end = summary.rfind(". ", 0, 300)
+        summary = summary[:sentence_end + 1] if sentence_end > 80 else summary[:297] + "..."
     return {
         "title": match.group(1),
-        "summary": summary[:350],
+        "summary": summary,
         "image": images[image_index] if len(images) > image_index else None,
     }
 
