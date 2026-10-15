@@ -11,6 +11,8 @@ ROOT_DIR = Path(__file__).resolve().parent
 HERITAGE_GEOJSON = ROOT_DIR / "data" / "heritage_objects.geojson"
 EXTENSION_ROUTES = ROOT_DIR / "data" / "extension_routes.geojson"
 EXTENSION_ADDRESSES = ROOT_DIR / "data" / "extension_addresses.geojson"
+DECADE_FOUR_ROUTES = ROOT_DIR / "data" / "decade_four_routes.geojson"
+DECADE_FOUR_ADDRESSES = ROOT_DIR / "data" / "decade_four_addresses.geojson"
 
 # Базовая карта (сцентрована на историческую Самару)
 samara_map = folium.Map(location=[53.1895, 50.0900], zoom_start=15)
@@ -559,14 +561,25 @@ extension_colors = {
     "Арцыбушевская": "#c62828",
     "Буянова": "#5e35b1",
     "Ново-Садовая": "#455a64",
+    "Демократическая": "#00897b",
+    "Георгия Димитрова": "#6a5acd",
+    "Ташкентская": "#e76f51",
+    "Стара-Загора": "#30704b",
+    "Советской Армии": "#9c5b36",
+    "Гагарина": "#4361a8",
+    "Победы": "#b14652",
+    "Авроры": "#7d5791",
+    "Осипенко": "#007f89",
+    "Пушкина": "#a06328",
 }
 
-for street_name, segments in load_extension_routes().items():
-    streets[street_name] = {
-        "segments": segments,
-        "highlight_weight": 10,
-        "color": extension_colors[street_name],
-    }
+for route_file, weight in ((EXTENSION_ROUTES, 10), (DECADE_FOUR_ROUTES, 3)):
+    for street_name, segments in load_extension_routes(route_file).items():
+        streets[street_name] = {
+            "segments": segments,
+            "highlight_weight": weight,
+            "color": extension_colors[street_name],
+        }
 
 # One legible walking route replaces the fragmented two-way carriageways and
 # distant highway pieces in the source snapshot. Waypoints lie on OSM ways.
@@ -6798,12 +6811,19 @@ extension_heritage_stops = {
                        9389923, 9386453, 9386441, 9390060, 9386638, 9386442],
     "Буянова": [9403964, 9386654, 9386449, 9389898, 9390061, 9386639],
     "Ново-Садовая": [9383820, 9390007, 9403277],
+    "Советской Армии": [9383793],
+    "Осипенко": [9386489, 9386494],
 }
 extension_days = {
     "Вилоновская": 21, "Ульяновская": 22, "Шостаковича": 23,
     "Маяковского": 24, "Чкалова": 25, "Полевая": 26,
     "Братьев Коростелёвых": 27, "Арцыбушевская": 28,
     "Буянова": 29, "Ново-Садовая": 30,
+    "Демократическая": 31, "Георгия Димитрова": 32,
+    "Ташкентская": 33, "Стара-Загора": 34,
+    "Советской Армии": 35, "Гагарина": 36,
+    "Победы": 37, "Авроры": 38,
+    "Осипенко": 39, "Пушкина": 40,
 }
 heritage_article_sections = {
     "Вилоновская": {9390080: 1, 9386473: 3, 9386544: 4,
@@ -6819,6 +6839,8 @@ heritage_article_sections = {
     "Буянова": {9403964: 1, 9386654: 2, 9386449: 4,
                 9389898: 5, 9390061: 5, 9386639: 8},
     "Ново-Садовая": {9383820: 8, 9390007: 9},
+    "Советской Армии": {9383793: 5},
+    "Осипенко": {9386489: 1, 9386494: 2},
 }
 extension_marker_colors = {
     "Вилоновская": "blue",
@@ -6830,6 +6852,16 @@ extension_marker_colors = {
     "Арцыбушевская": "red",
     "Буянова": "darkpurple",
     "Ново-Садовая": "gray",
+    "Демократическая": "green",
+    "Георгия Димитрова": "purple",
+    "Ташкентская": "orange",
+    "Стара-Загора": "darkgreen",
+    "Советской Армии": "beige",
+    "Гагарина": "blue",
+    "Победы": "red",
+    "Авроры": "darkpurple",
+    "Осипенко": "cadetblue",
+    "Пушкина": "darkred",
 }
 
 
@@ -6938,6 +6970,48 @@ for feature in json.loads(EXTENSION_ADDRESSES.read_text(encoding="utf-8"))["feat
         ),
     }
     places.append(add_article_details(place, street_name, *section))
+
+decade_four_address_sections = {
+    ("Демократическая", "43"): 3, ("Демократическая", "57"): 4,
+    ("Георгия Димитрова", "3"): 1, ("Георгия Димитрова", "20"): 5,
+    ("Георгия Димитрова", "36"): 2, ("Георгия Димитрова", "44"): 3,
+    ("Ташкентская", "92"): 2, ("Ташкентская", "100"): 2,
+    ("Ташкентская", "137"): 5, ("Ташкентская", "139"): 5,
+    ("Стара-Загора", "58"): 1, ("Стара-Загора", "96а"): 3,
+    ("Стара-Загора", "143"): 5,
+    ("Советской Армии", "2"): 1, ("Советской Армии", "5"): 1,
+    ("Советской Армии", "29"): 2, ("Советской Армии", "283"): 3,
+    ("Советской Армии", "285"): 3,
+    ("Гагарина", "54"): 3, ("Гагарина", "109"): 3,
+    ("Гагарина", "124"): 3, ("Гагарина", "171"): 3,
+    ("Победы", "92"): 1, ("Победы", "125"): 3,
+    ("Победы", "149"): 4, ("Победы", "151"): 5,
+    ("Авроры", "110"): 1, ("Авроры", "150"): 2,
+    ("Авроры", "154"): 2, ("Авроры", "201"): 3,
+    ("Авроры", "207"): 4,
+    ("Осипенко", "10а"): 2, ("Осипенко", "12"): 2,
+    ("Осипенко", "32"): 4, ("Осипенко", "34"): 3,
+    ("Пушкина", "181"): 2, ("Пушкина", "225"): 3,
+    ("Пушкина", "248"): 4, ("Пушкина", "284"): 5,
+}
+for feature in json.loads(DECADE_FOUR_ADDRESSES.read_text(encoding="utf-8"))["features"]:
+    street_name = feature["properties"]["street"]
+    number = feature["properties"]["number"]
+    section = decade_four_address_sections[(street_name, number)]
+    lon, lat = feature["geometry"]["coordinates"]
+    place = {
+        "name": f"{street_name}, {number}",
+        "coords": [lat, lon],
+        "info": [f"<b>Адрес:</b> {html_lib.escape(street_name)}, {html_lib.escape(number)}"],
+        "color": extension_marker_colors[street_name],
+        "icon": "map-marker",
+        "street": street_name,
+        "coordinate_source": (
+            f"OSM {feature['properties']['osm_type']}/"
+            f"{feature['properties']['osm_id']} via Nominatim"
+        ),
+    }
+    places.append(add_article_details(place, street_name, section))
 
 
 for street_name, name, coords, section, source in [
@@ -7092,20 +7166,40 @@ class ShowAllStreetsControl(MacroElement):
                         L.DomEvent.on(button, "click", function(event) {
                             L.DomEvent.preventDefault(event);
 
+                            map._showingAllStreets = true;
+                            const bounds = L.latLngBounds([]);
                             streetLayers.forEach(function(layer) {
                                 if (!map.hasLayer(layer)) {
                                     map.addLayer(layer);
                                 }
+                                if (layer.getBounds().isValid()) {
+                                    bounds.extend(layer.getBounds());
+                                }
                             });
+                            map._showingAllStreets = false;
+                            if (bounds.isValid()) {
+                                map.fitBounds(bounds, {padding: [20, 20], maxZoom: 12});
+                            }
                         });
 
                         return container;
                     }
                 });
 
-                {{ this._parent.get_name() }}.addControl(
+                const map = {{ this._parent.get_name() }};
+                map.addControl(
                     new ShowAllStreets()
                 );
+                map.on("overlayadd", function(event) {
+                    if (!map._showingAllStreets &&
+                        streetLayers.includes(event.layer) &&
+                        event.layer.getBounds().isValid()) {
+                        map.fitBounds(event.layer.getBounds(), {
+                            padding: [25, 25],
+                            maxZoom: 15
+                        });
+                    }
+                });
             })();
             {% endmacro %}
             """
@@ -7277,10 +7371,43 @@ for heritage_object in load_heritage_objects():
 # ------------------------------------------
 # Переключатель слоев
 # ------------------------------------------
-folium.LayerControl(
+layer_control = folium.LayerControl(
     position="topright",
     collapsed=False
-).add_to(samara_map)
+)
+layer_control.add_to(samara_map)
+
+
+class CollapseLayersOnMobile(MacroElement):
+    def __init__(self, control_name):
+        super().__init__()
+        self._name = "CollapseLayersOnMobile"
+        self.control_name = control_name
+        self._template = Template(
+            """
+            {% macro script(this, kwargs) %}
+            const mobileLayers = window.matchMedia("(max-width: 600px)");
+            if (mobileLayers.matches) {
+                {{ this.control_name }}.collapse();
+            }
+            mobileLayers.addEventListener("change", function(event) {
+                if (event.matches) {
+                    {{ this.control_name }}.collapse();
+                } else {
+                    {{ this.control_name }}.expand();
+                }
+            });
+            {{ this._parent.get_name() }}.on("overlayadd", function() {
+                if (mobileLayers.matches) {
+                    {{ this.control_name }}.collapse();
+                }
+            });
+            {% endmacro %}
+            """
+        )
+
+
+CollapseLayersOnMobile(layer_control.get_name()).add_to(samara_map)
 
 
 # ------------------------------------------

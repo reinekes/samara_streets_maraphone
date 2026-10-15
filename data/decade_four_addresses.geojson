@@ -1,0 +1,709 @@
+{
+  "type": "FeatureCollection",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL 1.0",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Демократическая",
+        "number": "43",
+        "display_name": "43, Демократическая улица (дублёр), Промышленный район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443115, Россия",
+        "osm_type": "way",
+        "osm_id": 43324162,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.222961,
+          53.2678272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Демократическая",
+        "number": "57",
+        "display_name": "57, Демократическая улица, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "relation",
+        "osm_id": 8142258,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2357148,
+          53.2779884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Георгия Димитрова",
+        "number": "3",
+        "display_name": "3, улица Георгия Димитрова, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443095, Россия",
+        "osm_type": "way",
+        "osm_id": 104382937,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2400176,
+          53.2505502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Георгия Димитрова",
+        "number": "20",
+        "display_name": "20, улица Георгия Димитрова, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 23193936,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2376508,
+          53.2509019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Георгия Димитрова",
+        "number": "36",
+        "display_name": "36, улица Георгия Димитрова, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 23191862,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2364732,
+          53.251263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Георгия Димитрова",
+        "number": "44",
+        "display_name": "44, улица Георгия Димитрова, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 81673183,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2343096,
+          53.2530581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ташкентская",
+        "number": "92",
+        "display_name": "92, Ташкентская улица, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 82677949,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2480236,
+          53.246638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ташкентская",
+        "number": "100",
+        "display_name": "100, Ташкентская улица, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 23286005,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.250283,
+          53.2448773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ташкентская",
+        "number": "137",
+        "display_name": "137, Ташкентская улица, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443095, Россия",
+        "osm_type": "way",
+        "osm_id": 156044733,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2480521,
+          53.2509738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Ташкентская",
+        "number": "139",
+        "display_name": "139, Ташкентская улица, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443095, Россия",
+        "osm_type": "way",
+        "osm_id": 201779076,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.24822,
+          53.2513613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Стара-Загора",
+        "number": "58",
+        "display_name": "58, улица Стара-Загора, Промышленный район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 26383344,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2088444,
+          53.2310395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Стара-Загора",
+        "number": "96а",
+        "display_name": "96А, улица Стара-Загора, Промышленный район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443084, Россия",
+        "osm_type": "way",
+        "osm_id": 23184155,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2220058,
+          53.2363376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Стара-Загора",
+        "number": "143",
+        "display_name": "143, улица Стара-Загора, Промышленный район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443087, Россия",
+        "osm_type": "way",
+        "osm_id": 23260592,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2253011,
+          53.2364973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Советской Армии",
+        "number": "2",
+        "display_name": "2, улица Советской Армии, Советский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443023, Россия",
+        "osm_type": "way",
+        "osm_id": 42948638,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2219673,
+          53.1906876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Советской Армии",
+        "number": "5",
+        "display_name": "5, улица Советской Армии, Советский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443023, Россия",
+        "osm_type": "relation",
+        "osm_id": 12904590,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2190274,
+          53.1941529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Советской Армии",
+        "number": "29",
+        "display_name": "Church dedicated to the Dormition of the Mother of God, 29, улица Советской Армии, Советский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 142129028,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2149109,
+          53.202011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Советской Армии",
+        "number": "283",
+        "display_name": "283, улица Советской Армии, ЖК \"Надежда\", Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 42351379,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1739319,
+          53.2447969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Советской Армии",
+        "number": "285",
+        "display_name": "285, улица Советской Армии, ЖК \"Надежда\", Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 42351373,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1741763,
+          53.2454348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Гагарина",
+        "number": "54",
+        "display_name": "54, улица Гагарина, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443079, Россия",
+        "osm_type": "way",
+        "osm_id": 41673313,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1839485,
+          53.2010356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Гагарина",
+        "number": "109",
+        "display_name": "109, улица Гагарина, Советский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443067, Россия",
+        "osm_type": "way",
+        "osm_id": 41523968,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2032005,
+          53.2006896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Гагарина",
+        "number": "124",
+        "display_name": "124, улица Гагарина, Советский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443083, Россия",
+        "osm_type": "way",
+        "osm_id": 42836370,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2286723,
+          53.2020715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Гагарина",
+        "number": "171",
+        "display_name": "171, улица Гагарина, Советский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443083, Россия",
+        "osm_type": "way",
+        "osm_id": 96661852,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2319067,
+          53.2014685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Победы",
+        "number": "92",
+        "display_name": "92, улица Победы, Безымянка, Советский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 49714815,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2465694,
+          53.2122811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Победы",
+        "number": "125",
+        "display_name": "125, улица Победы, Восточный, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 42956382,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2706,
+          53.2225442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Победы",
+        "number": "149",
+        "display_name": "149, улица Победы, Восточный, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 42956394,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2787838,
+          53.226362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Победы",
+        "number": "151",
+        "display_name": "151, улица Победы, Восточный, Кировский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 42956395,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2797184,
+          53.2262925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Авроры",
+        "number": "110",
+        "display_name": "110, улица Авроры, Железнодорожный район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443069, Россия",
+        "osm_type": "way",
+        "osm_id": 41663036,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1877663,
+          53.1935321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Авроры",
+        "number": "150",
+        "display_name": "150, улица Авроры, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443045, Россия",
+        "osm_type": "way",
+        "osm_id": 74631399,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1886131,
+          53.2103697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Авроры",
+        "number": "154",
+        "display_name": "154, улица Авроры, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 413848185,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1879362,
+          53.2134598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Авроры",
+        "number": "201",
+        "display_name": "201, улица Авроры, Советский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443045, Россия",
+        "osm_type": "way",
+        "osm_id": 42293272,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1907317,
+          53.2110729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Авроры",
+        "number": "207",
+        "display_name": "207, улица Авроры, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443080, Россия",
+        "osm_type": "way",
+        "osm_id": 26545516,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1896204,
+          53.2164803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Осипенко",
+        "number": "10а",
+        "display_name": "10А, улица Осипенко, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 405311613,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1336873,
+          53.2124425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Осипенко",
+        "number": "12",
+        "display_name": "Детский сад №391, 12, улица Осипенко, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 413518742,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1342945,
+          53.2127113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Осипенко",
+        "number": "32",
+        "display_name": "32, улица Осипенко, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443110, Россия",
+        "osm_type": "way",
+        "osm_id": 28759134,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1370252,
+          53.2076739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Осипенко",
+        "number": "34",
+        "display_name": "34, улица Осипенко, Октябрьский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443110, Россия",
+        "osm_type": "way",
+        "osm_id": 28759432,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.13944,
+          53.2070392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Пушкина",
+        "number": "181",
+        "display_name": "181, улица Пушкина, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 51755499,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1217152,
+          53.1996493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Пушкина",
+        "number": "225",
+        "display_name": "225, улица Пушкина, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 52009926,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1263474,
+          53.2012264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Пушкина",
+        "number": "248",
+        "display_name": "Поволжская государственная социально-гуманитарная академия, 248, улица Пушкина, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 413510539,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1224065,
+          53.2006341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "Пушкина",
+        "number": "284",
+        "display_name": "284, улица Пушкина, Ленинский район, Самара, городской округ Самара, Самарская область, Приволжский федеральный округ, 443028, Россия",
+        "osm_type": "way",
+        "osm_id": 43856605,
+        "source": "OpenStreetMap via Nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1263626,
+          53.2021929
+        ]
+      }
+    }
+  ]
+}

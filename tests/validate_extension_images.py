@@ -7,6 +7,7 @@ import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.error import HTTPError, URLError
+from urllib.parse import quote
 from urllib.request import Request, urlopen
 
 
@@ -14,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def check(url):
-    request = Request(url, headers={"User-Agent": "SamaraMarathonMap/1.0 (image audit)"})
+    request = Request(quote(url, safe=":/?=&%#"), headers={"User-Agent": "SamaraMarathonMap/1.0 (image audit)"})
     try:
         with urlopen(request, timeout=20) as response:
             kind = response.headers.get("Content-Type", "")
